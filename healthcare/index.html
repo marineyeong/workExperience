@@ -58,166 +58,12 @@
 
       /* wrap */
       #wrap {
-        min-width: 1000px;
         height: 100%;
         padding: 5px;
       }
 
-      /* title */
-      .title {
-        width: 100%;
-        padding: 20px;
-        margin-bottom: 40px;
-        background-color: #efefef;
-        border-radius: 8px;
-        box-shadow: inset 1px 1px 1px #efefef;
-      }
-
-      .title .info h1 {
-        color: #333333;
-        font-size: 32px;
-        font-weight: bold;
-      }
-
-      .title .info h2 {
-        margin-top: 20px;
-        font-size: 16px;
-      }
-
-      .title .info h3 {
-        margin-top: 10px;
-        font-size: 12px;
-      }
-
-      .title .info h3.update {
-        margin-top: 20px;
-      }
-
-      .title .history {
-        margin-top: 30px;
-      }
-
-      .title .history h2 {
-        font-size: 16px;
-        font-weight: 600;
-      }
-
-      .title .history h3 {
-        margin-top: 10px;
-        font-size: 14px;
-      }
-
-      .title .history ul {
-        display: none;
-        margin-top: 10px;
+      .table_area h1 {
         padding: 10px;
-        border: 1px solid #dcdcdc;
-        border-radius: 10px;
-        background-color: #fefefe;
-      }
-
-      .title .history button {
-        position: relative;
-        padding: 5px 8px;
-        cursor: pointer;
-      }
-
-      .title .history button:before {
-        position: absolute;
-        display: block;
-        width: 3px;
-        height: 3px;
-        top: calc((100% - 3px)/2);
-        left: 0;
-        border-radius: 50%;
-        background-color: #565656;
-        content: '';
-      }
-
-      .title .history ul.active {
-        display: block;
-      }
-
-      .title .history ul li {
-        margin-bottom: 5px;
-        font-size: 12px;
-        line-height: 16px;
-      }
-
-      .title .history ul li:last-child {
-        margin-bottom: 0;
-      }
-
-      .title .history ul li span {
-        margin-bottom: 5px;
-        margin-right: 5px;
-        color: #565656;
-        font-size: 12px;
-        line-height: 14px;
-        font-weight: 500;
-      }
-
-      .title .history ul li ul {
-        display: block;
-        padding: 5px;
-        margin-top: 0;
-        border: none;
-      }
-
-      .title .history ul li ul li {
-        margin-left: 10px;
-        list-style: disc;
-      }
-
-      /* table */
-      .status_info {
-        margin: 0 10px;
-        border: 1px solid #ececec;
-        line-height: 40px;
-      }
-
-      .status_info span {
-        display: inline-block;
-        width: 65px;
-        height: 23px;
-        margin-left: 10px;
-        border-radius: 10px;
-        font-size: 12px;
-        line-height: 23px;
-        text-align: center;
-      }
-
-      .status_info span.update {
-        margin-left: 5px;
-        background-color: #ffee55;
-      }
-
-      .status_info span.delete {
-        background-color: #6f6f6f;
-        color: #ffffff;
-      }
-
-      .status_info span.new {
-        background-color: #5489e5;
-        color: #ffffff;
-      }
-
-      .status_info span.issue {
-        background-color: #ff7777;
-        color: #ffffff;
-      }
-
-      .status_info span.checkup {
-        background-color: #3ac46f;
-        color: #ffffff;
-      }
-
-      .table_area {
-        margin-top: 30px;
-      }
-
-      .table_area h2 {
-        padding: 0 10px;
         margin-bottom: 15px;
         font-size: 18px;
         font-weight: 600;
@@ -367,98 +213,58 @@
         color: #ffffff;
       }
     </style>
-    <script src="https://code.jquery.com/jquery-3.6.1.js"
-      integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
     <title>Marine</title>
-    <script>
-      $(function () {
-        $('.proj_tit > button').click(function (e) {
-          e.preventDefault;
-          var tg = $(e.target);
-          var history = tg.parent('.proj_tit').siblings('.proj_log');
-          if (history.hasClass('active')) {
-            history.removeClass('active');
-          } else {
-            history.addClass('active');
-          }
-        })
-      })
-    </script>
 
   </head>
 
   <body>
     <div id="wrap">
-      <div class="title">
-        <div class="info">
-          <h1>S.lab Asia Front</h1>
-          <h2>S.lab Asia</h2>
-          <h3>작성자 : Marine(여인영)</h3>
-        </div>
-      </div>
-      <p class="status_info">
-        <span class="new">ing</span> : 진행 중
-        <span class="checkup">ing</span> : 추가 개발 진행 중
-        <span class="delete">end</span> : 종료
-      </p>
       <div class="table_area">
-        <h2>프로젝트 리스트</h2>
+        <h1>healthcare</h1>
         <div class="table_wrap">
           <table class="index">
             <colgroup>
-              <col style="width: 10%;">
-              <col style="width: 20%">
-              <col style="width: 20%">
             </colgroup>
             <thead>
               <tr>
-                <th>status.</th>
                 <th>site.</th>
                 <th class="file">file.</th>
               </tr>
             </thead>
             <tbody>
               <tr>
-                <td></td>
                 <td>레이아웃</td>
                 <td class="file_title"><a href="html/layout.html" target="_blank">/html/layout.html</a></td>
               </tr>
               <tr>
-                <td></td>
                 <td>회원가입</td>
                 <td class="file_title"><a href="html/join.html" target="_blank">/html/join.html</a></td>
               </tr>
               <tr>
-                <td></td>
                 <td>로그인</td>
                 <td class="file_title"><a href="html/login.html" target="_blank">/html/login.html</a></td>
               </tr>
               <tr>
-                <td></td>
                 <td>계산서 상세 내역</td>
                 <td class="file_title"><a href="html/bill_detail.html" target="_blank">/html/bill_detail.html</a></td>
               </tr>
               <tr>
-                <td></td>
                 <td>계산서 정산 내역</td>
                 <td class="file_title"><a href="html/bill_list.html" target="_blank">healthcare/html/bill_list.html</a>
                 </td>
               </tr>
               <tr>
-                <td></td>
                 <td>내 정보</td>
                 <td class="file_title"><a href="html/my_info.html" target="_blank">healthcare/html/my_info.html</a>
                 </td>
               </tr>
               <tr>
-                <td></td>
                 <td>배차 및 운송 정보</td>
                 <td class="file_title"><a href="html/transfer_info.html"
                     target="_blank">healthcare/html/transfer_info.html</a>
                 </td>
               </tr>
               <tr>
-                <td></td>
                 <td>운송 요청</td>
                 <td class="file_title"><a href="html/transfer_request.html"
                     target="_blank">healthcare/html/transfer_request.html</a></td>
