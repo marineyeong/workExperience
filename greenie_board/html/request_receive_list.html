@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- font-style -->
+    <link href="https://cdn.jsdelivr.net/gh/sunn-us/SUIT/fonts/static/woff2/SUIT.css" rel="stylesheet">
+
+    <!-- stylesheet -->
+    <link rel="stylesheet" type="text/css" href="../css/reset.css">
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <link rel="stylesheet" type="text/css" href="../css/mobile.css">
+
+    <!-- script -->
+    <script src="../js/jquery-3.6.1.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+    <script src="../js/script.js"></script>
+
+    <title>Greenie Dashboard</title>
+  </head>
+
+  <body>
+    <div id="wrap">
+      <aside>
+        <p class="mo_menu_btn"><button></button></p>
+        <nav>
+          <h1 class="logo">
+            <img src="" alt="로고">
+            <span><img src="" alt="Powerd"></span>
+          </h1>
+          <h1 class="mo_logo">
+            <img src="" alt="로고">
+          </h1>
+          <ul class="depth1">
+            <li class="ico_chart">
+              <a href="">뎁스1</a>
+              <ul class="depth2">
+                <li><a href="">뎁스2</a></li>
+                <li><a href="">뎁스2</a></li>
+                <li><a href="">뎁스2</a></li>
+              </ul>
+            </li>
+            <li class="ico_box">
+              <a href="">뎁스1</a>
+              <ul class="depth2">
+                <li><a href="">뎁스2</a></li>
+                <li><a href="">뎁스2</a></li>
+                <li><a href="">뎁스2</a></li>
+              </ul>
+            </li>
+            <li class="ico_box">
+              <a href="">뎁스1</a>
+              <ul class="depth2">
+                <li><a href="">뎁스2</a></li>
+                <li><a href="">뎁스2</a></li>
+                <li><a href="">뎁스2</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+      </aside>
+      <main>
+        <header>
+          <p class="menu_btn"><button></button></p>
+          <h2>입고 요청 목록</h2>
+          <i class="profile"><button></button></i>
+        </header>
+        <div class="content_wrap request_receive_list">
+          <div class="search_area">
+            <div class="search_wrap">
+              <span class="search_tit">조회기간</span>
+              <div class="set_select_input">
+                <div class="select_box">
+                  <button>요청일시</button>
+                  <ul>
+                    <li><button>요청일시</button></li>
+                    <li><button>요청일시</button></li>
+                  </ul>
+                </div>
+                <div class="input_wrap datepicker"><input type="text"></div>
+              </div>
+            </div>
+            <div class="search_wrap">
+              <span class="search_tit">제품</span>
+              <div class="set_select_btn">
+                <div class="select_box">
+                  <button>전체</button>
+                  <ul>
+                    <li><button>품목1</button></li>
+                    <li><button>품목2</button></li>
+                  </ul>
+                </div>
+                <span class="btn_md green"><button>조회</button></span>
+              </div>
+            </div>
+          </div>
+          <section>
+            <div class="table_info">
+              <p class="result">조회결과 <span>30</span>개</p>
+              <ul class="tab_area">
+                <li class="tab on"><button>전체</button></li>
+                <li class="tab"><button>출고 전</button></li>
+                <li class="tab"><button>출고 완료</button></li>
+                <li class="tab"><button>취소</button></li>
+              </ul>
+            </div>
+            <article class="tab_cont">
+              <div class="content_area on">
+                <div class="table_area label">
+                  <table>
+                    <colgroup>
+                      <col width="15%">
+                      <col width="12%">
+                      <col width="12%">
+                      <col width="auto">
+                      <col width="12%">
+                      <col width="10%">
+                      <col width="10%">
+                    </colgroup>
+                    <thead>
+                      <tr>
+                        <th>요청번호</th>
+                        <th>요청일시</th>
+                        <th class="pc">제품명</th>
+                        <th class="pc">주소</th>
+                        <th class="pc">출고일시</th>
+                        <th>출고수량</th>
+                        <th class="pc">상태</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>
+                          <span class="btn_label gray"><button>123456789</button></span>
+                        </td>
+                        <td>2022-01-12 00:00:00</td>
+                        <td class="pc">품목1</td>
+                        <td class="pc">
+                          <address>(065348) 서울시 용산(065348) 서울시 용산</address>
+                        </td>
+                        <td class="pc">-</td>
+                        <td>-</td>
+                        <td class="pc"><span class="label_tag gray">출고전</span></td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <span class="btn_label gray"><button>123456789</button></span>
+                        </td>
+                        <td>2022-01-12 00:00:00</td>
+                        <td class="pc">품목1</td>
+                        <td class="pc">
+                          <address>(065348) 서울시 용산(065348) 서울시 용산</address>
+                        </td>
+                        <td class="pc">-</td>
+                        <td>-</td>
+                        <td class="pc"><span class="label_tag red">취소</span></td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <span class="btn_label gray"><button>123456789</button></span>
+                        </td>
+                        <td>2022-01-12 00:00:00</td>
+                        <td class="pc">품목1</td>
+                        <td class="pc">
+                          <address>(065348) 서울시 용산</address>
+                        </td>
+                        <td class="pc">2022-01-12 00:00:00</td>
+                        <td>300</td>
+                        <td class="pc"><span class="label_tag green">출고 완료</span></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <div class="pagination">
+                  <ul>
+                    <li class="first"><button></button></li>
+                    <li class="prev"><button></button></li>
+                    <li class="on"><button>1</button></li>
+                    <li><button>2</button></li>
+                    <li><button>3</button></li>
+                    <li><button>4</button></li>
+                    <li><button>5</button></li>
+                    <li class="next"><button></button></li>
+                    <li class="last"><button></button></li>
+                  </ul>
+                </div>
+              </div>
+            </article>
+          </section>
+        </div>
+        <footer>
+          <div class="policy">
+            <a href="">개인정보 처리방침</a>
+            <p class="copyright">Copyright © (주)에스랩아시아 All rights reserved.</p>
+          </div>
+          <ul class="certificate_area">
+            <li><img src="../images/ico_certificate1.png" alt=""></li>
+            <li><img src="../images/ico_certificate2.png" alt=""></li>
+            <li><img src="../images/ico_certificate3.png" alt=""></li>
+          </ul>
+        </footer>
+      </main>
+    </div>
+  </body>
+
+</html>

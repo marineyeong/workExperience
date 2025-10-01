@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- font-style -->
+    <link href="https://cdn.jsdelivr.net/gh/sunn-us/SUIT/fonts/static/woff2/SUIT.css" rel="stylesheet">
+
+    <!-- stylesheet -->
+    <link rel="stylesheet" type="text/css" href="../css/reset.css">
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <link rel="stylesheet" type="text/css" href="../css/mobile.css">
+
+    <!-- script -->
+    <script src="../js/jquery-3.6.1.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+    <script src="../js/script.js"></script>
+
+    <title>Greenie Dashboard</title>
+  </head>
+
+  <body>
+    <div id="wrap">
+      <aside>
+        <p class="mo_menu_btn"><button></button></p>
+        <nav>
+          <h1 class="logo">
+            <img src="" alt="로고">
+            <span><img src="" alt="Powerd"></span>
+          </h1>
+          <h1 class="mo_logo">
+            <img src="" alt="로고">
+          </h1>
+          <ul class="depth1">
+            <li class="ico_chart">
+              <a href="">뎁스1</a>
+              <ul class="depth2">
+                <li><a href="">뎁스2</a></li>
+                <li><a href="">뎁스2</a></li>
+                <li><a href="">뎁스2</a></li>
+              </ul>
+            </li>
+            <li class="ico_box">
+              <a href="">뎁스1</a>
+              <ul class="depth2">
+                <li><a href="">뎁스2</a></li>
+                <li><a href="">뎁스2</a></li>
+                <li><a href="">뎁스2</a></li>
+              </ul>
+            </li>
+            <li class="ico_box">
+              <a href="">뎁스1</a>
+              <ul class="depth2">
+                <li><a href="">뎁스2</a></li>
+                <li><a href="">뎁스2</a></li>
+                <li><a href="">뎁스2</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+      </aside>
+      <main>
+        <header>
+          <p class="menu_btn"><button></button></p>
+          <h2>입고 요청하기</h2>
+          <i class="profile"><button></button></i>
+        </header>
+        <div class="content_wrap request_receive">
+          <section>
+            <article>
+              <div class="content_area">
+                <h3 class="content_tit">입고 요청하기</h3>
+                <div class="setting_list">
+                  <div class="setting_item">
+                    <span class="item_tit">요청 상품</span>
+                    <div class="check_wrap">
+                      <div class="checkbox">
+                        <input type="radio" id="상품1" name="Greenie" value="상품1" checked>
+                        <label for="상품1">
+                          <span>상품1</span>
+                        </label>
+                      </div>
+                      <div class="checkbox">
+                        <input type="radio" id="상품2" name="Greenie" value="상품2">
+                        <label for="상품2">
+                          <span>상품2</span>
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="setting_item">
+                    <span class="item_tit">요청 수량</span>
+                    <div class="input_wrap">
+                      <input type="text" placeholder="수량 입력">
+                    </div>
+                  </div>
+                  <div class="setting_item">
+                    <span class="item_tit">수령지 주소</span>
+                    <div class="select_box">
+                      <button>수령지 주소</button>
+                      <ul>
+                        <li><button>수령지 주소1</button></li>
+                        <li><button>수령지 주소2</button></li>
+                        <li><button>수령지 주소3</button></li>
+                        <li><button>수령지 주소4</button></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="setting_item">
+                    <span class="item_tit">기타 요청</span>
+                    <div class="input_wrap">
+                      <textarea name="" id="" cols="30" rows="10" placeholder="요청사항 입력"></textarea>
+                    </div>
+                  </div>
+                </div>
+                <span class="btn_submit"><button>보내기</button></span>
+              </div>
+            </article>
+          </section>
+        </div>
+        <footer>
+          <div class="policy">
+            <a href="">개인정보 처리방침</a>
+            <p class="copyright">Copyright © (주)에스랩아시아 All rights reserved.</p>
+          </div>
+          <ul class="certificate_area">
+            <li><img src="../images/ico_certificate1.png" alt=""></li>
+            <li><img src="../images/ico_certificate2.png" alt=""></li>
+            <li><img src="../images/ico_certificate3.png" alt=""></li>
+          </ul>
+        </footer>
+      </main>
+    </div>
+  </body>
+
+</html>

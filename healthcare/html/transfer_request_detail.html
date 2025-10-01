@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- font-style -->
+    <link href="https://cdn.jsdelivr.net/gh/sunn-us/SUIT/fonts/static/woff2/SUIT.css" rel="stylesheet">
+
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/style.css">
+
+    <script src="../js/jquery-3.6.1.min.js"></script>
+    <script src="../js/script.js"></script>
+
+    <title>S.lab healthcare</title>
+  </head>
+
+  <body>
+    <div id="wrap">
+      <!-- header -->
+      <header>
+        <div class="menu_area">
+          <nav>
+            <div class="logo">
+              <h1 class="main_logo"><img src="." alt="s.lab healthcare">ttl Cloud</h1>
+              <h1 class="sub_logo"><img src="../images/sub_logo.png" alt="s.lab healthcare">ttl Cloud</h1>
+            </div>
+            <ul class="menu">
+              <li class="trans">
+                <a href="">뎁스 1</a>
+                <ul class="depth2">
+                  <li><a href="">뎁스 2</a></li>
+                  <li><a href="">뎁스 2</a></li>
+                </ul>
+              </li>
+              <li class="bill">
+                <a href="">뎁스 1</a>
+                <ul class="depth2">
+                  <li><a href="">뎁스 2</a></li>
+                </ul>
+              </li>
+              <li class="setting">
+                <a href="">뎁스 1</a>
+                <ul class="depth2">
+                  <li><a href="">뎁스 2</a></li>
+                  <li><a href="">뎁스 2</a></li>
+                  <li><a href="">뎁스 2</a></li>
+                </ul>
+              </li>
+            </ul>
+          </nav>
+          <p class="menu_btn"><button></button></p>
+        </div>
+        <div class="title_area">
+          <h2>운송 요청 상세</h2>
+        </div>
+        <div class="mypage">
+          <p class="profile">
+            <button>이익준</button>
+          </p>
+          <ul class="info_list">
+            <li><a href="">내 정보</a></li>
+            <li><a href="">비밀번호 변경</a></li>
+            <li><a href="">고객센터</a></li>
+            <li class="logout"><a href="">로그아웃</a></li>
+          </ul>
+        </div>
+      </header>
+      <!-- //header -->
+      <!-- content -->
+      <main class="content_area request_detail">
+        <section>
+          <div class="content_top">
+            <p class="order_date"><b>2022-01-23</b>888888888 <span class="info_tag blue">담당자 확인 중</span></p>
+          </div>
+          <div class="content_wrap">
+            <div class="content_inner">
+              <article>
+                <h4 class="cont_tit ico_location">상차</h4>
+                <div class="address_area">
+                  <address>(04524)서울특별시 중구 세종대로 110 서울특별시청</address>
+                  <p class="number"><span class="name">홍길동</span>010-1234-1234</p>
+                </div>
+              </article>
+              <article>
+                <h4 class="cont_tit ico_location">하차</h4>
+                <div class="address_area">
+                  <address>(04524)서울특별시 중구 세종대로 110 서울특별시청</address>
+                  <p class="number"><span class="name">홍길동</span>010-1234-1234</p>
+                </div>
+              </article>
+              <article>
+                <h4 class="cont_tit ico_transfer">배송 단계 - 배송중</h4>
+                <ul class="item_list transfer_step">
+                  <!-- 시작 후 on 유지 -->
+                  <!-- 현재 표시 on now -->
+                  <li class="on">
+                    <span class="item_tit">담당자 확인 중</span>
+                    <div class="time_stamp">
+                      <p>2022-10-20 04:12:39 요청</p>
+                    </div>
+                  </li>
+                  <li class="on">
+                    <span class="item_tit">접수 확정</span>
+                    <div class="time_stamp">
+                      <p>2022-10-20 04:12:39 접수 확정</p>
+                    </div>
+                  </li>
+                  <li class="on now">
+                    <span class="item_tit">배차 완료</span>
+                    <div class="time_stamp">
+                      <p>2022-10-20 04:12:39 배차 완료</p>
+                    </div>
+                  </li>
+                  <li>
+                    <span class="item_tit">픽업 중</span>
+                  </li>
+                  <li>
+                    <span class="item_tit">운송 중</span>
+                  </li>
+                  <li>
+                    <span class="item_tit">운송 완료</span>
+                  </li>
+                </ul>
+              </article>
+              <article>
+                <h4 class="cont_tit ico_transfer">배송 단계 - 운송중</h4>
+                <ul class="item_list transfer_step">
+                  <!-- 시작 후 on 유지 -->
+                  <!-- 현재 표시 on now -->
+                  <li class="on">
+                    <span class="item_tit">담당자 확인 중</span>
+                    <div class="time_stamp">
+                      <p>2022-10-20 04:12:39 요청</p>
+                    </div>
+                  </li>
+                  <li class="on">
+                    <span class="item_tit">접수 확정</span>
+                    <div class="time_stamp">
+                      <p>2022-10-20 04:12:39 접수 확정</p>
+                    </div>
+                  </li>
+                  <li class="on">
+                    <span class="item_tit">배차 완료</span>
+                    <div class="time_stamp">
+                      <p>2022-10-20 04:12:39 배차 완료</p>
+                    </div>
+                  </li>
+                  <li class="on">
+                    <span class="item_tit">픽업 중</span>
+                    <div class="time_stamp">
+                      <p>2022-10-20 04:12:39 픽업 출발</p>
+                      <p>2022-10-20 04:12:39 상차지 도착</p>
+                    </div>
+                  </li>
+                  <li class="on now">
+                    <span class="item_tit">운송 중</span>
+                    <div class="time_stamp">
+                      <p>2022-10-20 04:12:39 픽업 완료</p>
+                      <p>2022-10-20 04:12:39 상차지 출발</p>
+                      <p>2022-10-20 04:12:39 하차지 도착</p>
+                    </div>
+                  </li>
+                  <li>
+                    <span class="item_tit">운송 완료</span>
+                  </li>
+                </ul>
+              </article>
+              <article>
+                <h4 class="cont_tit ico_transfer">배송 단계 - 반송 중</h4>
+                <ul class="item_list transfer_step">
+                  <!-- 시작 후 on 유지 -->
+                  <!-- 현재 표시 on now -->
+                  <li class="on">
+                    <span class="item_tit">담당자 확인 중</span>
+                    <div class="time_stamp">
+                      <p>2022-10-20 04:12:39 요청</p>
+                    </div>
+                  </li>
+                  <li class="on">
+                    <span class="item_tit">접수 확정</span>
+                    <div class="time_stamp">
+                      <p>2022-10-20 04:12:39 접수 확정</p>
+                    </div>
+                  </li>
+                  <li class="on">
+                    <span class="item_tit">배차 완료</span>
+                    <div class="time_stamp">
+                      <p>2022-10-20 04:12:39 배차 완료</p>
+                    </div>
+                  </li>
+                  <li class="on">
+                    <span class="item_tit">픽업 중</span>
+                    <div class="time_stamp">
+                      <p>2022-10-20 04:12:39 픽업 출발</p>
+                      <p>2022-10-20 04:12:39 상차지 도착</p>
+                    </div>
+                  </li>
+                  <li class="on">
+                    <span class="item_tit">운송 중</span>
+                    <div class="time_stamp">
+                      <p>2022-10-20 04:12:39 픽업 완료</p>
+                      <p>2022-10-20 04:12:39 상차지 출발</p>
+                      <p>2022-10-20 04:12:39 하차지 도착</p>
+                    </div>
+                  </li>
+                  <li class="on">
+                    <span class="item_tit">반송 중</span>
+                    <div class="time_stamp">
+                      <p>2022-10-20 04:12:39 수령 거부</p>
+                    </div>
+                  </li>
+                  <li>
+                    <span class="item_tit">반송 완료</span>
+                  </li>
+                </ul>
+              </article>
+              <article>
+                <h4 class="cont_tit ico_transfer">배송 단계 - 반송 완료</h4>
+                <ul class="item_list transfer_step">
+                  <!-- 시작 후 on 유지 -->
+                  <!-- 현재 표시 on now -->
+                  <li class="on">
+                    <span class="item_tit">담당자 확인 중</span>
+                    <div class="time_stamp">
+                      <p>2022-10-20 04:12:39 요청</p>
+                    </div>
+                  </li>
+                  <li class="on">
+                    <span class="item_tit">접수 확정</span>
+                    <div class="time_stamp">
+                      <p>2022-10-20 04:12:39 접수 확정</p>
+                    </div>
+                  </li>
+                  <li class="on">
+                    <span class="item_tit">배차 완료</span>
+                    <div class="time_stamp">
+                      <p>2022-10-20 04:12:39 배차 완료</p>
+                    </div>
+                  </li>
+                  <li class="on">
+                    <span class="item_tit">픽업 중</span>
+                    <div class="time_stamp">
+                      <p>2022-10-20 04:12:39 픽업 출발</p>
+                      <p>2022-10-20 04:12:39 상차지 도착</p>
+                    </div>
+                  </li>
+                  <li class="on">
+                    <span class="item_tit">운송 중</span>
+                    <div class="time_stamp">
+                      <p>2022-10-20 04:12:39 픽업 완료</p>
+                      <p>2022-10-20 04:12:39 상차지 출발</p>
+                      <p>2022-10-20 04:12:39 하차지 도착</p>
+                    </div>
+                  </li>
+                  <li class="on">
+                    <span class="item_tit">반송 중</span>
+                    <div class="time_stamp">
+                      <p>2022-10-20 04:12:39 수령 거부</p>
+                    </div>
+                  </li>
+                  <li class="on now">
+                    <span class="item_tit">반송 완료</span>
+                    <div class="time_stamp">
+                      <p>2022-10-20 04:12:39 반송 완료</p>
+                    </div>
+                  </li>
+                </ul>
+              </article>
+              <article>
+                <h4 class="cont_tit ico_reserv">예약내용</h4>
+                <ul class="item_list">
+                  <li><span class="item_tit">상차 희망 일시</span>2022-10-20 04:12</li>
+                  <li><span class="item_tit">운송차량</span>승용차(소화물)</li>
+                  <li><span class="item_tit">차량 온도</span>실온</li>
+                  <li><span class="item_tit">상하차서비스</span>신청 안 함</li>
+                  <li><span class="item_tit">화물정보</span>냉장/냉동 의약품</li>
+                  <li><span class="item_tit">회수 옵션</span>신청 아 함</li>
+                  <li><span class="item_tit">기타 요청</span>(없음)</li>
+                  <li><span class="item_tit">부가서비스</span>2022-10-20 04:12</li>
+                </ul>
+              </article>
+              <article>
+                <h4 class="cont_tit ico_date">배차정보</h4>
+                <ul class="item_list">
+                  <li><span class="item_tit">운송차량</span>서울 가 2403 / 1토</li>
+                  <li><span class="item_tit">운송기사</span>박강민 / 010-0000-0000</li>
+                </ul>
+              </article>
+              <article class="arrival_info">
+                <h4 class="cont_tit ico_receipt">전자인수증</h4>
+                <ul class="file_list">
+                  <li><span><i>01</i></span>전자인수증 파일1</li>
+                  <li><span><i>01</i></span>전자인수증 파일2</li>
+                  <li><a href=""><span><i>01</i></span>전자인수증 파일2 버튼</a></li>
+                </ul>
+              </article>
+              <article>
+                <h4 class="cont_tit ico_data">배송 데이터</h4>
+                <div class="table_area">
+                  <table>
+                    <thead>
+                      <tr>
+                        <th>패키지 번호</th>
+                        <th>데이터로거</th>
+                        <th>측정번호</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>271111000985-1</td>
+                        <td>2811110054687</td>
+                        <td><span class="btn_ico download text_black"><button>TM1091</button></span></td>
+                      </tr>
+                      <tr>
+                        <td>271111000985-1</td>
+                        <td>2811110054687</td>
+                        <td><span class="btn_ico download text_black"><button>TM1091</button></span></td>
+                      </tr>
+                      <tr>
+                        <td>271111000985-1</td>
+                        <td>2811110054687</td>
+                        <td><span class="btn_ico download text_black"><button>TM1091</button></span></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </article>
+            </div>
+            <div class="side_wrap">
+              <div class="map_area">
+                <div class="map_wrap">
+                  지도영역입니다.
+                  <span class="btn_xs white_b"><button class="btn_modal wide">확대보기</button></span>
+                </div>
+              </div>
+              <article class="estimate_cont">
+                <ul class="estimate_list">
+                  <li class="item"><span>요금 항목</span><span class="price">금액</span></li>
+                  <li><span>운송료</span><span class="price">27,000원</span></li>
+                  <li><span>회수 비용</span><span class="price">27,000원</span></li>
+                  <li class="total"><span>합계</span><span class="price">40,000원</span></li>
+                </ul>
+                <p class="estimate_cost"><span>결제금액</span>150,000원</p>
+                <div class="estimate_info">
+                  <p class="tit">조회 일시</p>
+                  <p>2022/09/11 11:08:49</p>
+                </div>
+                <div class="estimate_info">
+                  <p class="tit">추가 요금 발생 안내</p>
+                  <p>서비스 이용 시 과적, 기사님의 대기 등의 이유로 추가요금이 발생될 수 있습니다. 추가요금 발생 시 셀로지스를 통해 자동 결제되니 현장에서 현금으로 지불하지 말아주시길 바랍니다.
+                    위 내용을 확인하였으며, 개인정보 제3자 제공에 동의합니다.</p>
+                </div>
+                <div class="estimate_info">
+                  <p class="tit">소화물 배송 안내</p>
+                  <p>서비스 이용 시 과적, 기사님의 대기 등의 이유로 추가요금이 발생될 수 있습니다. 추가요금 발생 시 셀로지스를 통해 자동 결제되니 현장에서 현금으로 지불하지 말아주시길 바랍니다.
+                    위 내용을 확인하였으며, 개인정보 제3자 제공에 동의합니다.</p>
+                </div>
+                <div class="estimate_btn">
+                  <p class="btn_large white_b"><button>취소하기</button></p>
+                  <p class="btn_large"><button>재주문</button></p>
+                </div>
+              </article>
+            </div>
+          </div>
+
+        </section>
+        <!-- title -->
+      </main>
+      <!-- //content -->
+      <!-- footer -->
+      <footer>
+        <p class="copyright">Copyright © (주)에스랩아시아 All rights reserved.</p>
+        <ul class="">
+          <li><a href="">이용약관</a></li>
+          <li><a href="">개인정보 처리방침</a></li>
+        </ul>
+      </footer>
+      <!-- //footer -->
+    </div>
+    <div class="modal wide">
+      <div class="modal_box">
+        <div class="tit_area">
+          <p class="modal_tit">지도<button class="btn_close"></button></p>
+        </div>
+        <div class="modal_wrap">
+          <div class="map_cont"><img src="../images/thumbnail.png" alt=""></div>
+        </div>
+      </div>
+    </div>
+  </body>
+
+</html>
