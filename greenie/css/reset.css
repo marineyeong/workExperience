@@ -1,0 +1,45 @@
+/* font setting */
+@font-face {
+  font-family: 'Red Hat Display';
+  src: url('../font/Red_Hat_Display/RedHatDisplay-Light.ttf');
+  font-weight: 300;
+}
+@font-face {
+  font-family: 'Red Hat Display';
+  src: url('../font/Red_Hat_Display/RedHatDisplay-Regular.ttf');
+  font-weight: 400;
+}
+@font-face {
+  font-family: 'Red Hat Display';
+  src: url('../font/Red_Hat_Display/RedHatDisplay-Medium.ttf');
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: 'Red Hat Display';
+  src: url('../font/Red_Hat_Display/RedHatDisplay-SemiBold.ttf');
+  font-weight: 600;
+}
+@font-face {
+  font-family: 'Red Hat Display';
+  src: url('../font/Red_Hat_Display/RedHatDisplay-Bold.ttf');
+  font-weight: 700;
+}
+@font-face {
+  font-family: 'Red Hat Display';
+  font-weight: 900;
+  src: url('../font/Red_Hat_Display/RedHatDisplay-ExtraBold.ttf');
+}
+
+/* reset */
+*, br {padding: 0; margin: 0; border: 0; box-sizing: border-box; font-family: 'Red Hat Display', sans-serif; color: #111; font-size: 18px; font-weight: 400; line-height: 20px;}
+ul, li, ol, dl, dt, dd {list-style: none;}
+a {display: block; color: #111; text-decoration: none;}
+a:link, a:active, a:visited {color: inherit;}
+button {border: 0; background: none;}
+table {border-collapse: collapse; border-spacing: 0;}
+img {display: block; width: 100%;}
+html {position: relative; overflow-x: hidden; scroll-behavior: smooth; -webkit-text-size-adjust: 100%;}
+address {font-style: normal;}
+br {font-size: 0;}
+/* html, body {height: 100%; overflow-x: hidden;} */
