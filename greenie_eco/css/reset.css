@@ -1,0 +1,74 @@
+/* font setting */
+@font-face {
+  font-family: 'Noto Sans KR';
+  src: url('../font/Noto_Sans_KR/NotoSansKR-Bold.otf');
+  font-weight: 600;
+}
+@font-face {
+  font-family: 'Noto Sans KR';
+  src: url('../font/Noto_Sans_KR/NotoSansKR-Medium.otf');
+  font-weight: 500;
+}
+@font-face {
+  font-family: 'Noto Sans KR';
+  src: url('../font/Noto_Sans_KR/NotoSansKR-Regular.otf');
+  font-weight: 400;
+}
+@font-face {
+  font-family: 'Noto Sans KR';
+  src: url('../font/Noto_Sans_KR/NotoSansKR-Light.otf');
+  font-weight: 300;
+}
+@font-face {
+  font-family: 'Noto Sans KR';
+  src: url('../font/Red_Hat_Display/RedHatDisplay-Light.ttf');
+  font-weight: 300;
+  unicode-range: U+0041-005A, U+0061-007A, U+0030-0039;
+}
+@font-face {
+  font-family: 'Noto Sans KR';
+  src: url('../font/Red_Hat_Display/RedHatDisplay-Regular.ttf');
+  font-weight: 400;
+  unicode-range: U+0041-005A, U+0061-007A, U+0030-0039;
+}
+@font-face {
+  font-family: 'Noto Sans KR';
+  src: url('../font/Red_Hat_Display/RedHatDisplay-Medium.ttf');
+  font-weight: 500;
+  unicode-range: U+0041-005A, U+0061-007A, U+0030-0039;
+}
+@font-face {
+  font-family: 'Noto Sans KR';
+  src: url('../font/Red_Hat_Display/RedHatDisplay-SemiBold.ttf');
+  font-weight: 600;
+  unicode-range: U+0041-005A, U+0061-007A, U+0030-0039;
+
+}
+@font-face {
+  font-family: 'Noto Sans KR';
+  src: local('Red Hat Display'), url('../font/Red_Hat_Display/RedHatDisplay-Bold.ttf');
+  font-weight: 700;
+  unicode-range: U+0041-005A, U+0061-007A, U+0030-0039;
+
+}
+@font-face {
+  font-family: 'Noto Sans KR';
+  font-weight: 900;
+  src: local('Red Hat Display'), url('../font/Red_Hat_Display/RedHatDisplay-ExtraBold.ttf');
+  unicode-range: U+0041-005A, U+0061-007A, U+0030-0039;
+}
+
+/* reset */
+* {padding: 0; margin: 0; border: 0; box-sizing: border-box;}
+html {position: relative; scroll-behavior: smooth;}
+body {font-family: 'Noto Sans KR', 'Red Hat Display', sans-serif; color: #555; font-weight: 400; letter-spacing: -0.2px; word-break: keep-all;}
+/* html, body {height: 100%; overflow-x: hidden;} */
+ul, li, ol, dl, dt, dd {list-style: none;}
+a {display: block;}
+a, strong {color: inherit; font-size: inherit; line-height: inherit; text-decoration: none;}
+a:link, a:active, a:visited {color: inherit;}
+button {width: 100%; height: 100%; border: 0; background: none; cursor: pointer; font-size: inherit; line-height: inherit; font-weight: inherit;}
+table {border-collapse: collapse; border-spacing: 0;}
+img {display: block; width: 100%;}
+input {overflow: hidden; font-family: 'Noto Sans KR';}
+.container {display: flex; width: 100%; max-width: 1200px; margin: 0 auto; justify-content: space-between; align-items: center; }
