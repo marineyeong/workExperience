@@ -1,0 +1,67 @@
+/* font setting */
+@font-face {
+  font-family: 'SUIT';
+  src: url('../font/SUIT-Light.ttf');  
+  font-weight: 200;
+}
+@font-face {
+  font-family: 'SUIT';
+  src: url('../font/SUIT-Light.ttf');  
+  font-weight: 300;
+}
+@font-face {
+  font-family: 'SUIT';
+  src: url('../font/SUIT-Regular.ttf');  
+  font-weight: 400;
+}
+@font-face {
+  font-family: 'SUIT';
+  src: url('../font/SUIT-Medium.ttf');  
+  font-weight: 500;
+}
+@font-face {
+  font-family: 'SUIT';
+  src: url('../font/SUIT-SemiBold.ttf');
+  font-weight: 600;
+}
+@font-face {
+  font-family: 'SUIT';
+  src: url('../font/SUIT-Bold.ttf');
+  font-weight: 700;
+}
+@font-face {
+  font-family: 'SUIT';
+  src: url('../font/SUIT-ExtraBold.ttf');
+  font-weight: 800;
+}
+
+html {position: relative;}
+html, body {height: 100%; scroll-behavior: smooth;}
+
+* {padding: 0; margin: 0; border: 0; box-sizing: border-box; font-family: 'SUIT', sans-serif; color: #000; font-size: 16px; line-height: 24px; font-weight: 400; letter-spacing: -0.03px; overflow-wrap: break-word;}
+ul, li, ol, dl, dt, dd {list-style: none;}
+span, b {display: inline-block; vertical-align: top;}
+a {display: block; color: inherit; line-height: inherit; text-decoration: none;}
+a:link, a:active, a:visited {color: inherit;}
+i {font-style: normal;}
+button {display: block; width: 100%; height: 100%; margin: 0 auto; border: 0; background: none; color: inherit; font-size: inherit; line-height: inherit; cursor: pointer;}
+table {display: table; width: 100%; table-layout:fixed;}
+table, tr, td, th, thead, tbody, tfoot, caption {table-layout:fixed; border-collapse: collapse;}
+img {display: block; width: 100%;}
+address {font-style: normal;}
+
+input,
+textarea {overflow: hidden; display: block; width: 100%; height: 100%; padding: 12px; background-color: #fff; border-radius: var(--br-xs); color: #333;}
+textarea {resize: none;}
+
+textarea::placeholder,
+input::placeholder {color:#aaa; font-weight: 300;}
+
+textarea:focus,
+textarea:focus-visible,
+input:focus,
+input:focus-visible {outline: 0; border: 1px solid #000; box-shadow: 0 0 25px rgba(0, 0, 0, 0.08);}
+
+textarea:disabled,
+input:read-only,
+input:disabled {background-color: #f5f5f5; color: #777;}

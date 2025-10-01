@@ -1,0 +1,70 @@
+/* font setting */
+@font-face {
+  font-family: 'SUIT';
+  src: url('../font/SUIT-Light.ttf');  
+  font-weight: 200;
+}
+@font-face {
+  font-family: 'SUIT';
+  src: url('../font/SUIT-Light.ttf');  
+  font-weight: 300;
+}
+@font-face {
+  font-family: 'SUIT';
+  src: url('../font/SUIT-Regular.ttf');  
+  font-weight: 400;
+}
+@font-face {
+  font-family: 'SUIT';
+  src: url('../font/SUIT-Medium.ttf');  
+  font-weight: 500;
+}
+@font-face {
+  font-family: 'SUIT';
+  src: url('../font/SUIT-SemiBold.ttf');
+  font-weight: 600;
+}
+@font-face {
+  font-family: 'SUIT';
+  src: url('../font/SUIT-Bold.ttf');
+  font-weight: 700;
+}
+@font-face {
+  font-family: 'SUIT';
+  src: url('../font/SUIT-ExtraBold.ttf');
+  font-weight: 800;
+}
+
+html {position: relative;}
+html, body {height: 100%; padding: 0; margin: 0; scroll-behavior: smooth;}
+
+* {border: 0; box-sizing: border-box; font-family: 'SUIT', sans-serif; color: #000; letter-spacing: -0.03px; overflow-wrap: break-word;}
+table {display: table; width: 100%; table-layout:fixed;}
+table, tr, td, th, thead, tbody, tfoot, caption {table-layout:fixed; border-collapse: collapse;}
+
+/* policy */
+header {position: fixed; top: 0; left: 0; right: 0; display: flex; padding: 62px 40px 22px 40px; background: #fff; justify-content: space-between; z-index: 500;}
+header .title_area .title {margin: 0; color: #000; font-size: 24px; line-height: 36px; font-weight: 600;}
+main {margin-top: 120px; padding: 48px;}
+
+section {font-size: 16px; line-height: 24px;}
+
+footer {display: flex; width: 100%; margin-top: 40px; justify-content: space-between; align-items: flex-end;}
+
+footer .policy p {color: #777; font-size: 14px; line-height: 21px;}
+
+footer .certificate_area {display: flex; margin-top: 56px; align-items: center; list-style: none;}
+footer .certificate_area li {height: 40px; margin-right: 10px;}
+footer .certificate_area li img {width: auto; height: 100%;}
+footer .certificate_area li:last-child {margin-right: 0;}
+
+@media (max-width: 1000px) {
+  header {padding: 2.1334vw 4.2667vw;}
+  header .title_area .title {font-size: 5.3334vw; line-height: 8vw; font-weight: 500;}
+  main {margin-top: 12.8vw; padding: 8vw 6.1334vw;}
+  section {font-size: 3.7334vw; line-height: 5.6vw;}
+  footer {padding: 10.6667vw 0; flex-direction: column; align-items: center;}
+  footer .policy p {margin-top: 2.1334vw; font-size: 3.2vw; line-height: 4.8vw; text-align: center;}
+  footer .certificate_area {padding: 0; margin-top: 6.4vw; justify-content: center;}
+  footer .certificate_area li {height: 10.6667vw; margin-right: 2.6667vw;}
+}

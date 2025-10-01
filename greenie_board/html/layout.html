@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- font-style -->
+    <link href="https://cdn.jsdelivr.net/gh/sunn-us/SUIT/fonts/static/woff2/SUIT.css" rel="stylesheet">
+
+    <!-- stylesheet -->
+    <link rel="stylesheet" type="text/css" href="../css/reset.css">
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <link rel="stylesheet" type="text/css" href="../css/mobile.css">
+
+    <!-- script -->
+    <script src="../js/jquery-3.6.1.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+    <script src="../js/script.js"></script>
+
+    <title>Greenie Dashboard</title>
+  </head>
+
+  <body>
+    <div id="wrap">
+      <aside>
+        <p class="mo_menu_btn"><button></button></p>
+        <nav>
+          <h1 class="logo">
+            <img src="" alt="로고">
+            <span><img src="" alt="Powerd"></span>
+          </h1>
+          <h1 class="mo_logo">
+            <img src="" alt="로고">
+          </h1>
+          <ul class="depth1">
+            <li class="ico_chart">
+              <a href="">뎁스1</a>
+              <ul class="depth2">
+                <li><a href="">뎁스2</a></li>
+                <li><a href="">뎁스2</a></li>
+                <li><a href="">뎁스2</a></li>
+              </ul>
+            </li>
+            <li class="ico_box">
+              <a href="">뎁스1</a>
+              <ul class="depth2">
+                <li><a href="">뎁스2</a></li>
+                <li><a href="">뎁스2</a></li>
+                <li><a href="">뎁스2</a></li>
+              </ul>
+            </li>
+            <li class="ico_box">
+              <a href="">뎁스1</a>
+              <ul class="depth2">
+                <li><a href="">뎁스2</a></li>
+                <li><a href="">뎁스2</a></li>
+                <li><a href="">뎁스2</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+      </aside>
+      <main>
+        <header>
+          <p class="menu_btn"><button></button></p>
+          <h2>타이틀</h2>
+          <i class="profile">
+            <button class="btn_modal modal_profile"></button>
+            <ul class="modal modal_profile profile_list">
+              <li class="name"><span class="member">기업회원</span>
+                <p>이메일</p>
+              </li>
+              <li><a href="#" class="btn_modal change_pwd">비밀번호 변경</a></li>
+              <li><a href="">고객센터</a></li>
+              <li><a href="">로그아웃</a></li>
+            </ul>
+          </i>
+        </header>
+        <div class="content_wrap">
+          <section>
+            <p class="mo_show">모바일 브라우저 환경을 지원하지 않습니다. <br>
+              원활한 서비스 이용을 위해 PC에서 접속해주세요.</p>
+            컨텐츠 영역입니다.
+          </section>
+        </div>
+        <footer>
+          <div class="policy">
+            <ul>
+              <li>
+                <a href="">개인정보 처리방침</a>
+              </li>
+              <li>
+                <button>KOR</button>
+              </li>
+            </ul>
+            <p class="copyright">Copyright © (주)에스랩아시아 All rights reserved.</p>
+          </div>
+          <ul class="certificate_area">
+            <li><img src="../images/ico_certificate1.png" alt=""></li>
+            <li><img src="../images/ico_certificate2.png" alt=""></li>
+            <li><img src="../images/ico_certificate3.png" alt=""></li>
+          </ul>
+        </footer>
+      </main>
+    </div>
+    <div class="modal change_pwd">
+      <div class="modal_box">
+        <div class="modal_tit_area">
+          <p class="modal_tit">비밀번호 변경</p><span class="btn_close"><button></button></span>
+        </div>
+        <p class="sub_txt">현재 비밀번호와 변경할 비밀번호를 입력해주세요.</p>
+        <div class="login_wrap">
+          <form action="">
+            <p class="input_wrap">
+              <input type="text" name="userId" id="userId" placeholder="ID" class="user_id">
+            </p>
+            <p class="input_wrap">
+              <input type="text" name="pwd_chk" id="pwd_chk" placeholder="비밀번호" class="pwd_chk">
+            </p>
+            <p class="input_wrap">
+              <input type="password" name="userPwd" id="userPwd" placeholder="비밀번호 확인" class="user_pwd">
+            </p>
+            <p class="warning"><span>패스워드를 확인해주세요!</span></p>
+          </form>
+        </div>
+        <p class="btn_submit"><button>변경하기</button></p>
+      </div>
+    </div>
+  </body>
+
+</html>

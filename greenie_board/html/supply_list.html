@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- font-style -->
+    <link href="https://cdn.jsdelivr.net/gh/sunn-us/SUIT/fonts/static/woff2/SUIT.css" rel="stylesheet">
+
+    <!-- stylesheet -->
+    <link rel="stylesheet" type="text/css" href="../css/reset.css">
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <link rel="stylesheet" type="text/css" href="../css/mobile.css">
+
+    <!-- script -->
+    <script src="../js/jquery-3.6.1.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+    <script src="../js/script.js"></script>
+
+    <title>Greenie Dashboard</title>
+  </head>
+
+  <body>
+    <div id="wrap">
+      <aside>
+        <p class="mo_menu_btn"><button></button></p>
+        <nav>
+          <h1 class="logo">
+            <img src="../images/ico_certificate1.png" alt="로고">
+            <span><img src="../images/greenie.png" alt="Powerd bt Greenie"></span>
+          </h1>
+          <ul class="depth1">
+            <li class="ico_chart">
+              <a href="">대시보드</a>
+              <ul class="depth2">
+                <li><a href="">온실가스 통계</a></li>
+                <li><a href=""> 렌탈 통계</a></li>
+              </ul>
+            </li>
+            <li class="ico_box">
+              <a href="">에코 박스 렌탈</a>
+              <ul class="depth2">
+                <li><a href="">입고 요청하기</a></li>
+                <li><a href="">입고 요청 목록</a></li>
+                <li><a href="">렌탈 사용량 관리</a></li>
+              </ul>
+            </li>
+            <li class="ico_box">
+              <a href="">스티로폼 박스 이용</a>
+              <ul class="depth2">
+                <li><a href="">스티로폼 박스 이용 관리</a></li>
+                <li><a href="">스티로폼 박스 종류 관리</a></li>
+                <li><a href="">상품 관리</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+      </aside>
+      <main>
+        <header>
+          <p class="menu_btn"><button></button></p>
+          <h2>공급사 목록</h2>
+          <i class="profile"><button></button></i>
+        </header>
+        <div class="content_wrap foam_type">
+          <div class="search_area">
+            <div class="search_wrap">
+              <span class="search_tit">검색</span>
+              <div class="set_select_input">
+                <div class="select_box">
+                  <button>상품명</button>
+                  <ul>
+                    <li><button>상품명</button></li>
+                    <li><button>상품명</button></li>
+                  </ul>
+                </div>
+                <div class="input_wrap"><input type="text" placeholder="검색어 입력"></div>
+              </div>
+              <div class="btn_wrap">
+                <span class="btn_md green"><button>조회</button></span>
+                <span class="btn_md black"><button>등록</button></span>
+              </div>
+            </div>
+          </div>
+          <section>
+            <div class="table_info">
+              <p class="result">등록 <span>30</span>개</p>
+            </div>
+            <article class="tab_cont">
+              <div class="content_area on">
+                <div class="table_area label">
+                  <table>
+                    <colgroup>
+                      <col width="20%">
+                      <col width="20%">
+                      <col width="20%">
+                      <col width="auto">
+                    </colgroup>
+                    <thead>
+                      <tr>
+                        <th class="left">공급사 ID</th>
+                        <th class="left">공급사명</th>
+                        <th class="pc">사업자 등록번호</th>
+                        <th class="pc">주소</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td class="left"><span class="label_tag gray">123456789</span></td>
+                        <td class="left">바다림</td>
+                        <td class="pc">011-11-00000</td>
+                        <td class="pc">(123456)서울특별시 어쩌고 저쩌고 동네입니다.</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <div class="pagination">
+                  <ul>
+                    <li class="first"><button></button></li>
+                    <li class="prev"><button></button></li>
+                    <li class="on"><button>1</button></li>
+                    <li><button>2</button></li>
+                    <li><button>3</button></li>
+                    <li><button>4</button></li>
+                    <li><button>5</button></li>
+                    <li class="next"><button></button></li>
+                    <li class="last"><button></button></li>
+                  </ul>
+                </div>
+              </div>
+            </article>
+          </section>
+        </div>
+        <footer>
+          <div class="policy">
+            <a href="">개인정보 처리방침</a>
+            <p class="copyright">Copyright © (주)에스랩아시아 All rights reserved.</p>
+          </div>
+          <ul class="certificate_area">
+            <li><img src="../images/ico_certificate1.png" alt=""></li>
+            <li><img src="../images/ico_certificate2.png" alt=""></li>
+            <li><img src="../images/ico_certificate3.png" alt=""></li>
+          </ul>
+        </footer>
+      </main>
+    </div>
+  </body>
+
+</html>

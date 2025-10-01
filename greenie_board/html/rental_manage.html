@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- font-style -->
+    <link href="https://cdn.jsdelivr.net/gh/sunn-us/SUIT/fonts/static/woff2/SUIT.css" rel="stylesheet">
+
+    <!-- stylesheet -->
+    <link rel="stylesheet" type="text/css" href="../css/reset.css">
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <link rel="stylesheet" type="text/css" href="../css/mobile.css">
+
+    <!-- script -->
+    <script src="../js/jquery-3.6.1.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+    <script src="../js/script.js"></script>
+
+    <title>Greenie Dashboard</title>
+  </head>
+
+  <body>
+    <div id="wrap">
+      <aside>
+        <p class="mo_menu_btn"><button></button></p>
+        <nav>
+          <h1 class="logo">
+            <img src="" alt="로고">
+            <span><img src="" alt="Powerd"></span>
+          </h1>
+          <h1 class="mo_logo">
+            <img src="" alt="로고">
+          </h1>
+          <ul class="depth1">
+            <li class="ico_chart">
+              <a href="">뎁스1</a>
+              <ul class="depth2">
+                <li><a href="">뎁스2</a></li>
+                <li><a href="">뎁스2</a></li>
+                <li><a href="">뎁스2</a></li>
+              </ul>
+            </li>
+            <li class="ico_box">
+              <a href="">뎁스1</a>
+              <ul class="depth2">
+                <li><a href="">뎁스2</a></li>
+                <li><a href="">뎁스2</a></li>
+                <li><a href="">뎁스2</a></li>
+              </ul>
+            </li>
+            <li class="ico_box">
+              <a href="">뎁스1</a>
+              <ul class="depth2">
+                <li><a href="">뎁스2</a></li>
+                <li><a href="">뎁스2</a></li>
+                <li><a href="">뎁스2</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+      </aside>
+      <main>
+        <header>
+          <p class="menu_btn"><button></button></p>
+          <h2>렌탈 사용량 관리</h2>
+          <i class="profile"><button></button></i>
+        </header>
+        <div class="content_wrap rental_manage">
+          <div class="search_area">
+            <div class="search_wrap">
+              <span class="search_tit">조회기간</span>
+              <div class="set_select_input">
+                <div class="select_box">
+                  <button>요청일시</button>
+                  <ul>
+                    <li><button>요청일시</button></li>
+                    <li><button>요청일시</button></li>
+                  </ul>
+                </div>
+                <div class="input_wrap datepicker"><input type="text"></div>
+              </div>
+            </div>
+            <div class="search_wrap">
+              <span class="search_tit">기업고객</span>
+              <div class="set_select_btn">
+                <div class="select_box">
+                  <button>홈플러스</button>
+                  <ul>
+                    <li><button>이마트</button></li>
+                    <li><button>롯데마트</button></li>
+                  </ul>
+                </div>
+                <span class="btn_md green"><button>조회</button></span>
+              </div>
+            </div>
+          </div>
+          <section>
+            <div class="table_info">
+              <p class="result">조회결과 <span>30</span>개</p>
+            </div>
+            <article>
+              <div class="content_area">
+                <div class="table_area input">
+                  <table>
+                    <colgroup>
+                      <col width="33%">
+                      <col width="33%">
+                      <col width="33%">
+                    </colgroup>
+                    <thead>
+                      <tr>
+                        <th class="left">사용일</th>
+                        <th class="right">품목1</th>
+                        <th class="right">품목2</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td class="left">2022-01-12</td>
+                        <td>
+                          <div class="input_wrap"><input type="text" placeholder="수량 입력"></div>
+                        </td>
+                        <td>
+                          <div class="input_wrap"><input type="text" placeholder="수량 입력"></div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="left">2022-01-12</td>
+                        <td>
+                          <div class="input_wrap"><input type="text" placeholder="수량 입력"></div>
+                        </td>
+                        <td>
+                          <div class="input_wrap"><input type="text" placeholder="수량 입력"></div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="left">2022-01-12</td>
+                        <td>
+                          <div class="input_wrap"><input type="text" placeholder="수량 입력" value="100"></div>
+                        </td>
+                        <td>
+                          <div class="input_wrap"><input type="text" placeholder="수량 입력" value="500"></div>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <ul class="total">
+                  <li>사용횟수: <span>180</span> 회 </li>
+                  <li>대체 스티로폼 무게: <span>0</span> kg </li>
+                  <li>온실가스 절감량: <span> 0</span> kgCO2eq</li>
+                </ul>
+                <p class="btn_area"><span class="btn_md black"><button>저장하기</button></span></p>
+              </div>
+            </article>
+          </section>
+        </div>
+        <footer>
+          <div class="policy">
+            <a href="">개인정보 처리방침</a>
+            <p class="copyright">Copyright © (주)에스랩아시아 All rights reserved.</p>
+          </div>
+          <ul class="certificate_area">
+            <li><img src="../images/ico_certificate1.png" alt=""></li>
+            <li><img src="../images/ico_certificate2.png" alt=""></li>
+            <li><img src="../images/ico_certificate3.png" alt=""></li>
+          </ul>
+        </footer>
+      </main>
+    </div>
+  </body>
+
+</html>
