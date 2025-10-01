@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- font-style -->
+    <link href="https://cdn.jsdelivr.net/gh/sunn-us/SUIT/fonts/static/woff2/SUIT.css" rel="stylesheet">
+
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/style.css">
+
+    <script src="../js/jquery-3.6.1.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+    <script src="../js/script.js"></script>
+
+    <title>S.lab healthcare</title>
+  </head>
+
+  <body>
+    <div id="wrap">
+      <!-- header -->
+      <header>
+        <div class="menu_area">
+          <nav>
+            <div class="logo">
+              <h1 class="main_logo"><img src="." alt="s.lab healthcare">ttl Cloud</h1>
+              <h1 class="sub_logo"><img src="../images/sub_logo.png" alt="s.lab healthcare">ttl Cloud</h1>
+            </div>
+            <ul class="menu">
+              <li class="trans">
+                <a href="">뎁스 1</a>
+                <ul class="depth2">
+                  <li><a href="">뎁스 2</a></li>
+                  <li><a href="">뎁스 2</a></li>
+                </ul>
+              </li>
+              <li class="bill">
+                <a href="">뎁스 1</a>
+                <ul class="depth2">
+                  <li><a href="">뎁스 2</a></li>
+                </ul>
+              </li>
+              <li class="setting">
+                <a href="">뎁스 1</a>
+                <ul class="depth2">
+                  <li><a href="">뎁스 2</a></li>
+                  <li><a href="">뎁스 2</a></li>
+                  <li><a href="">뎁스 2</a></li>
+                </ul>
+              </li>
+            </ul>
+          </nav>
+          <p class="menu_btn"><button></button></p>
+        </div>
+        <div class="title_area">
+          <h2>운송 요청</h2>
+        </div>
+        <div class="mypage">
+          <p class="profile">
+            <button>이익준</button>
+          </p>
+          <ul class="info_list">
+            <li><a href="">내 정보</a></li>
+            <li><a href="">비밀번호 변경</a></li>
+            <li><a href="">고객센터</a></li>
+            <li class="logout"><a href="">로그아웃</a></li>
+          </ul>
+        </div>
+      </header>
+      <!-- //header -->
+      <!-- content -->
+      <main class="content_area transfer_request">
+        <section>
+          <div class="map_area">
+            <div class="map_cont">
+              지도 영역입니다.
+            </div>
+            <div class="side_area">
+              <p class="tab_area">
+                <span class="tab on"><button>보내기</button></span>
+                <span class="tab"><button>찾아오기</button></span>
+              </p>
+              <div class="tab_cont">
+                <div class="on">
+                  <article>
+                    <div class="location_box">
+                      <div class="tit">
+                        <p>상차지</p>
+                        <span class="btn_xs white_b"><button class="btn_modal address_change">변경</button></span>
+                      </div>
+                      <div class="info_wrap">
+                        <address>
+                          <span>주소명1</span>
+                          (22382)인천 중구 제2터미널대로 446
+                        </address>
+                        <p class="number"><span class="name">홍길동</span>010-1234-5678<span
+                            class="btn_delete"><button></button></span></p>
+                        <p class="number"><span class="name">홍길동</span>010-1234-5678<span
+                            class="btn_delete"><button></button></span></p>
+                        <p class="btn_add"><button class="btn_modal get">추가하기</button></p>
+                      </div>
+                    </div>
+                    <div class="location_box">
+                      <div class="tit">
+                        <p>하차지</p>
+                        <p class="btn_area">
+                          <span class="btn_xs white_b"><button class="btn_modal address_input">입력</button></span>
+                          <span class="btn_xs white_b"><button class="btn_modal address_book">불러오기</button></span>
+                        </p>
+                      </div>
+                      <div class="info_wrap">
+                        <address>주소정보 없음</address>
+                        <p class="number empty"><button class="btn_modal get">받는 분 입력</button></p>
+                      </div>
+                    </div>
+                  </article>
+                  <article>
+                    <h3 class="must">상차 희망 일시</h3>
+                    <ul class="notice_list">
+                      <li>- 전일 오후 4시 이전에 신청해주셔야 배차가 가능합니다.</li>
+                      <li>- 주말 및 공휴일 운송은 최소 2일 전에 신청해주셔야 배차가 가능하며, 휴일 배송 추가 요금이 발생할 수 있습니다.</li>
+                      <li>- 하차 희망 일시가 있는 경우 기타 요청에 메모를 남겨주세요.</li>
+                    </ul>
+                    <p class="input_wrap datepicker"><input type="text" id="input7" placeholder=""></p>
+                  </article>
+                  <article>
+                    <h3 class="must">물품 정보</h3>
+                    <div class="select_box">
+                      <button>화물정보</button>
+                      <ul>
+                        <li><button>화물정보1</button></li>
+                        <li><button>화물정보2</button></li>
+                        <li><button>화물정보3</button></li>
+                        <li><button>화물정보4</button></li>
+                      </ul>
+                    </div>
+                    <p class="input_txtarea">
+                      <textarea name="" id="" cols="30" rows="10" placeholder="기타 요청사항 입력"></textarea>
+                    </p>
+                  </article>
+                  <article>
+                    <h3>차량종류</h3>
+                    <div class="vehicle">
+                      <div class="vehicle_box">
+                        <input type="radio" id="radio_vehicle1" name="vehicle" value="오토바이(소화물)">
+                        <label for="radio_vehicle1">
+                          <span>오토바이(소화물)</span>
+                          <p class="icon_img"><img src="../images/ico_car1.png" alt="오토바이(소화물)"></p>
+                        </label>
+                      </div>
+                      <div class="vehicle_box">
+                        <input type="radio" id="radio_vehicle2" name="vehicle" value="승용차(소화물)">
+                        <label for="radio_vehicle2">
+                          <span>승용차(소화물)</span>
+                          <p class="icon_img"><img src="../images/ico_car2.png" alt="승용차(소화물)"></p>
+                        </label>
+
+                      </div>
+                      <div class="vehicle_box">
+                        <input type="radio" id="radio_vehicle3" name="vehicle" value="다마스">
+                        <label for="radio_vehicle3">
+                          <span>다마스</span>
+                          <p class="icon_img"><img src="../images/ico_car3.png" alt="다마스"></p>
+                        </label>
+                      </div>
+                      <div class="vehicle_box">
+                        <input type="radio" id="radio_vehicle4" name="vehicle" value="1톤 트럭" checked>
+                        <label for="radio_vehicle4">
+                          <span>1톤 트럭</span>
+                          <p class="icon_img"><img src="../images/ico_car4.png" alt="1톤 트럭"></p>
+                        </label>
+                      </div>
+                      <div class="vehicle_box">
+                        <input type="radio" id="radio_vehicle5" name="vehicle" value="2.5톤 트럭">
+                        <label for="radio_vehicle5">
+                          <span>2.5톤 트럭</span>
+                          <p class="icon_img"><img src="../images/ico_car5.png" alt="2.5톤 트럭"></p>
+                        </label>
+                      </div>
+                      <div class="vehicle_box">
+                        <input type="radio" id="radio_vehicle6" name="vehicle" value="5톤 트럭">
+                        <label for="radio_vehicle6">
+                          <span>5톤 트럭</span>
+                          <p class="icon_img"><img src="../images/ico_car6.png" alt="5톤 트럭"></p>
+                        </label>
+                      </div>
+                    </div>
+                  </article>
+                  <article class="chk_area">
+                    <h3>차량 온도</h3>
+                    <div class="checkbox radio">
+                      <input type="radio" id="input_radio1" name="radio" vale="실온" disabled>
+                      <label for="input_radio1"><span>실온</span></label>
+                    </div>
+                    <div class="checkbox radio">
+                      <input type="radio" id="input_radio2" name="radio" vale="냉장 (2°C ~ 8°C)">
+                      <label for="input_radio2"><span>냉장 (2°C ~ 8°C)</span></label>
+                    </div>
+                    <div class="checkbox radio">
+                      <input type="radio" id="input_radio3" name="radio" vale="냉동 (-20°C 이하)">
+                      <label for="input_radio3"><span>냉동 (-20°C 이하)</span></label>
+                    </div>
+                  </article>
+                  <article class="chk_area">
+                    <h3>상하차 서비스 <span class="sub_txt">기사님의 상하차 도움이 필요한 경우 서비스를 신청해주세요.</span></h3>
+                    <div class="checkbox">
+                      <input type="checkbox" id="input_chk1" name="chk1" vale="상차 서비스 이용" disabled>
+                      <label for="input_chk1"><span>상차 서비스 이용</span></label>
+                    </div>
+                    <div class="checkbox">
+                      <input type="checkbox" id="input_chk2" name="chk2" vale="하차 서비스 이용">
+                      <label for="input_chk2"><span>하차 서비스 이용</span></label>
+                    </div>
+                  </article>
+                  <article class="chk_area">
+                    <h3>회수 서비스 <span class="sub_txt">운송 완료 후, 회수해야하는 서류 및 빈 포자재 등이 있는 경우, 회수 옵션을 선택하세요.</span></h3>
+                    <div class="checkbox radio">
+                      <input type="radio" id="input_radio4" name="radio" vale="냉동 (-20°C 이하)">
+                      <label for="input_radio4"><span>신청 안 함</span></label>
+                    </div>
+                    <div class="checkbox radio">
+                      <input type="radio" id="input_radio5" name="radio" vale="냉동 (-20°C 이하)">
+                      <label for="input_radio5"><span>당일 회수</span></label>
+                    </div>
+                    <div class="checkbox radio">
+                      <input type="radio" id="input_radio6" name="radio" vale="냉동 (-20°C 이하)">
+                      <label for="input_radio6"><span>우편 회수 (주1회 모아 상차지로 우편 발송)</span></label>
+                    </div>
+                  </article>
+                  <article>
+                    <h3 class="tit_btn">포장 서비스 <span class="btn_xs white_b btn_ico download"><button>제품소개
+                          보기</button></span></h3>
+                    <ul class="product_list">
+                      <li>
+                        <p class="thumb"><img src="" alt="제품 이미지"></p>
+                        <p class="name">제품1</p>
+                        <p class="price">9,500원<span>5% 할인가</span></p>
+                        <div class="select_box">
+                          <button>화물정보</button>
+                          <ul>
+                            <li><button>화물정보1</button></li>
+                            <li><button>화물정보2</button></li>
+                            <li><button>화물정보3</button></li>
+                            <li><button>화물정보4</button></li>
+                          </ul>
+                        </div>
+                        <p class="input_wrap amount"><input type="text" id="input7" placeholder="수량 입력"></p>
+                      </li>
+                    </ul>
+                    <div class="btn_area">
+                      <p class="btn_medium white"><button>더보기</button></p>
+                    </div>
+                  </article>
+                  <article>
+                    <div class="estimate_cont">
+                      <h3>예상 견적서</h3>
+                      <ul class="estimate_list">
+                        <li class="item"><span>요금 항목</span><span class="price">금액</span></li>
+                        <li><span>운송료</span><span class="price">27,000원</span></li>
+                        <li><span>회수 비용</span><span class="price">27,000원</span></li>
+                        <li class="total"><span>합계</span><span class="price">40,000원</span></li>
+                      </ul>
+                      <div class="estimate_info">
+                        <p class="tit">견적 일시</p>
+                        <p>2022/09/11 11:08:49</p>
+                      </div>
+                      <div class="estimate_info">
+                        <p class="tit">추가 요금 발생 안내</p>
+                        <p>서비스 이용 시 과적, 기사님의 대기 등의 이유로 추가요금이 발생될 수 있습니다. 추가요금 발생 시 셀로지스를 통해 자동 결제되니 현장에서 현금으로 지불하지 말아주시길
+                          바랍니다. 위 내용을 확인하였으며, 개인정보 제3자 제공에 동의합니다.</p>
+                      </div>
+                    </div>
+
+                  </article>
+                </div>
+                <div>
+                  <article>
+                    <div class="location_box">
+                      <div class="tit">
+                        <p>상차지</p>
+                        <span class="btn_xs white_b"><button class="btn_modal address_change">변경</button></span>
+                      </div>
+                      <div class="info_wrap">
+                        <address>
+                          <span>주소명</span>
+                          (22382)인천 중구 제2터미널대로 446
+                        </address>
+                        <p class="number"><span class="name">홍길동</span>010-1234-5678<span
+                            class="btn_delete"><button></button></span></p>
+                        <p class="number"><span class="name">홍길동</span>010-1234-5678<span
+                            class="btn_delete"><button></button></span></p>
+                        <p class="btn_add"><button class="btn_modal get">추가하기</button></p>
+                      </div>
+                    </div>
+                    <div class="location_box">
+                      <div class="tit">
+                        <p>하차지</p>
+                        <p class="btn_area">
+                          <span class="btn_xs white_b"><button class="btn_modal address_input">입력</button></span>
+                          <span class="btn_xs white_b"><button class="btn_modal address_book">불러오기</button></span>
+                        </p>
+                      </div>
+                      <div class="info_wrap">
+                        <address>주소정보 없음</address>
+                        <p class="number empty"><button class="btn_modal get">받는 분 입력</button></p>
+                      </div>
+                    </div>
+                  </article>
+                  <article>
+                    <h3 class="must">상차 희망 일시</h3>
+                    <ul class="notice_list">
+                      <li>- 전일 오후 4시 이전에 신청해주셔야 배차가 가능합니다.</li>
+                      <li>- 주말 및 공휴일 운송은 최소 2일 전에 신청해주셔야 배차가 가능하며, 휴일 배송 추가 요금이 발생할 수 있습니다.</li>
+                      <li>- 하차 희망 일시가 있는 경우 기타 요청에 메모를 남겨주세요.</li>
+                    </ul>
+                    <p class="input_wrap datepicker"><input type="text" id="input7" placeholder=""></p>
+                  </article>
+                  <article>
+                    <h3 class="must">물품 정보</h3>
+                    <div class="select_box">
+                      <button>화물정보</button>
+                      <ul>
+                        <li><button>화물정보1</button></li>
+                        <li><button>화물정보2</button></li>
+                        <li><button>화물정보3</button></li>
+                        <li><button>화물정보4</button></li>
+                      </ul>
+                    </div>
+                    <p class="input_txtarea">
+                      <textarea name="" id="" cols="30" rows="10" placeholder="기타 요청사항 입력"></textarea>
+                    </p>
+                  </article>
+                  <article>
+                    <h3>차량종류</h3>
+                    <div class="vehicle">
+                      <div class="vehicle_box">
+                        <input type="radio" id="radio_vehicle1" name="vehicle" value="오토바이(소화물)">
+                        <label for="radio_vehicle1">
+                          <span>오토바이(소화물)</span>
+                          <p class="icon_img"><img src="../images/ico_car1.png" alt="오토바이(소화물)"></p>
+                        </label>
+                      </div>
+                      <div class="vehicle_box">
+                        <input type="radio" id="radio_vehicle2" name="vehicle" value="승용차(소화물)">
+                        <label for="radio_vehicle2">
+                          <span>승용차(소화물)</span>
+                          <p class="icon_img"><img src="../images/ico_car2.png" alt="승용차(소화물)"></p>
+                        </label>
+
+                      </div>
+                      <div class="vehicle_box">
+                        <input type="radio" id="radio_vehicle3" name="vehicle" value="다마스">
+                        <label for="radio_vehicle3">
+                          <span>다마스</span>
+                          <p class="icon_img"><img src="../images/ico_car3.png" alt="다마스"></p>
+                        </label>
+                      </div>
+                      <div class="vehicle_box">
+                        <input type="radio" id="radio_vehicle4" name="vehicle" value="1톤 트럭" checked>
+                        <label for="radio_vehicle4">
+                          <span>1톤 트럭</span>
+                          <p class="icon_img"><img src="../images/ico_car4.png" alt="1톤 트럭"></p>
+                        </label>
+                      </div>
+                      <div class="vehicle_box">
+                        <input type="radio" id="radio_vehicle5" name="vehicle" value="2.5톤 트럭">
+                        <label for="radio_vehicle5">
+                          <span>2.5톤 트럭</span>
+                          <p class="icon_img"><img src="../images/ico_car5.png" alt="2.5톤 트럭"></p>
+                        </label>
+                      </div>
+                      <div class="vehicle_box">
+                        <input type="radio" id="radio_vehicle6" name="vehicle" value="5톤 트럭">
+                        <label for="radio_vehicle6">
+                          <span>5톤 트럭</span>
+                          <p class="icon_img"><img src="../images/ico_car6.png" alt="5톤 트럭"></p>
+                        </label>
+                      </div>
+                    </div>
+                  </article>
+                  <article class="chk_area">
+                    <h3>차량 온도</h3>
+                    <div class="checkbox radio">
+                      <input type="radio" id="input_radio1" name="radio" vale="실온">
+                      <label for="input_radio1"><span>실온</span></label>
+                    </div>
+                    <div class="checkbox radio">
+                      <input type="radio" id="input_radio2" name="radio" vale="냉장 (2°C ~ 8°C)">
+                      <label for="input_radio2"><span>냉장 (2°C ~ 8°C)</span></label>
+                    </div>
+                    <div class="checkbox radio">
+                      <input type="radio" id="input_radio3" name="radio" vale="냉동 (-20°C 이하)">
+                      <label for="input_radio3"><span>냉동 (-20°C 이하)</span></label>
+                    </div>
+                  </article>
+                  <article class="chk_area">
+                    <h3>상하차 서비스 <span class="sub_txt">기사님의 상하차 도움이 필요한 경우 서비스를 신청해주세요.</span></h3>
+                    <div class="checkbox">
+                      <input type="checkbox" id="input_chk1" name="chk1" vale="상차 서비스 이용">
+                      <label for="input_chk1"><span>상차 서비스 이용</span></label>
+                    </div>
+                    <div class="checkbox">
+                      <input type="checkbox" id="input_chk2" name="chk2" vale="하차 서비스 이용">
+                      <label for="input_chk2"><span>하차 서비스 이용</span></label>
+                    </div>
+                  </article>
+                  <article class="chk_area">
+                    <h3>회수 서비스 <span class="sub_txt">운송 완료 후, 회수해야하는 서류 및 빈 포자재 등이 있는 경우, 회수 옵션을 선택하세요.</span></h3>
+                    <div class="checkbox radio">
+                      <input type="radio" id="input_radio4" name="radio" vale="냉동 (-20°C 이하)">
+                      <label for="input_radio4"><span>신청 안 함</span></label>
+                    </div>
+                    <div class="checkbox radio">
+                      <input type="radio" id="input_radio5" name="radio" vale="냉동 (-20°C 이하)">
+                      <label for="input_radio5"><span>당일 회수</span></label>
+                    </div>
+                    <div class="checkbox radio">
+                      <input type="radio" id="input_radio6" name="radio" vale="냉동 (-20°C 이하)">
+                      <label for="input_radio6"><span>우편 회수 (주1회 모아 상차지로 우편 발송)</span></label>
+                    </div>
+                  </article>
+                  <article>
+                    <h3 class="tit_btn">포장 서비스 <span class="btn_xs white_b btn_ico download"><button>제품소개
+                          보기</button></span></h3>
+                    <ul class="product_list">
+                      <li>
+                        <p class="thumb"><img src="." alt="제품 이미지"></p>
+                        <p class="name">제품1</p>
+                        <p class="price">9,500원<span>5% 할인가</span></p>
+                        <p class="input_wrap amount"><input type="text" id="input7" placeholder="수량 입력"></p>
+                      </li>
+                    </ul>
+                    <div class="btn_area">
+                      <p class="btn_medium white"><button>더보기</button></p>
+                    </div>
+                  </article>
+                  <article>
+                    <div class="estimate_cont">
+                      <h3>예상 견적서</h3>
+                      <ul class="estimate_list">
+                        <li class="item"><span>요금 항목</span><span class="price">금액</span></li>
+                        <li><span>운송료</span><span class="price">27,000원</span></li>
+                        <li><span>회수 비용</span><span class="price">27,000원</span></li>
+                        <li class="total"><span>합계</span><span class="price">40,000원</span></li>
+                      </ul>
+                      <div class="estimate_info">
+                        <p class="tit">견적 일시</p>
+                        <p>2022/09/11 11:08:49</p>
+                      </div>
+                      <div class="estimate_info">
+                        <p class="tit">추가 요금 발생 안내</p>
+                        <p>서비스 이용 시 과적, 기사님의 대기 등의 이유로 추가요금이 발생될 수 있습니다. 추가요금 발생 시 셀로지스를 통해 자동 결제되니 현장에서 현금으로 지불하지 말아주시길
+                          바랍니다. 위 내용을 확인하였으며, 개인정보 제3자 제공에 동의합니다.</p>
+                      </div>
+                    </div>
+
+                  </article>
+                </div>
+              </div>
+            </div>
+            <div class="floating_price">
+              <p><span class="title">견적 금액</span> 40,000원</p>
+              <p class="btn_request"><button>요청하기</button></ㅔ>
+            </div>
+          </div>
+        </section>
+        <!-- title -->
+      </main>
+      <!-- //content -->
+      <!-- footer -->
+      <!-- footer 삭제 -->
+      <!-- //footer -->
+    </div>
+    <div class="modal address_input">
+      <div class="modal_box">
+        <div class="tit_area">
+          <p class="modal_tit">주소입력<button class="btn_close"></button></p>
+        </div>
+        <div class="modal_wrap">
+          <p class="input_wrap"><input type="text" placeholder="주소지명"></p>
+          <div class="set_btn">
+            <p class="input_wrap"><input type="text" id="input6" placeholder="(04631) 부산광역시 강서구 녹산산단 382로 14번가길"
+                disabled></p>
+            <span class="btn_medium white w80"><button>검색</button></span>
+          </div>
+          <p class="input_wrap"><input type="text" placeholder="상세주소"></p>
+        </div>
+        <p class="login_btn"><button>입력 완료</button></p>
+      </div>
+    </div>
+    <div class="modal address_item address_change">
+      <div class="modal_box">
+        <div class="tit_area">
+          <p class="modal_tit">계약 운송지<button class="btn_close"></button></p>
+        </div>
+        <div class="modal_wrap">
+          <div class="scroll">
+            <div class="checkbox address_list">
+              <input type="radio" id="radio_address1" name="address" value="서울 물류센터">
+              <label for="radio_address1">
+                <span class="name">서울 물류센터</span>
+                <p class="address">(04524)서울특별시 중구 세종대로 110 서울특별시청</p>
+              </label>
+            </div>
+            <div class="checkbox address_list">
+              <input type="radio" id="radio_address2" name="address" value="서울 물류센터서울 물류센터서울 물류센터서울 물류센터서울 물류센터">
+              <label for="radio_address2">
+                <span class="name">서울 물류센터서울 물류센터서울 물류센터서울 물류센터서울 물류센터</span>
+                <p class="address">(04524)서울특별시 중구 세종대로 110 서울특별시청</p>
+              </label>
+            </div>
+            <div class="checkbox address_list">
+              <input type="radio" id="radio_address3" name="address" value="서울 물류센터">
+              <label for="radio_address3">
+                <span class="name">서울 물류센터</span>
+                <p class="address">(04524)서울특별시 중구 세종대로 110 서울특별시청 (04524)서울특별시 중구 세종대로 110 서울특별시청(04524)서울특별시 중구 세종대로
+                  110 서울특별시청 (04524)서울특별시 중구 세종대로 110 서울특별시청(04524)서울특별시 중구 세종대로 110 서울특별시청 (04524)서울특별시 중구 세종대로 110
+                  서울특별시청</p>
+              </label>
+            </div>
+            <div class="checkbox address_list">
+              <input type="radio" id="radio_address4" name="address" value="서울 물류센터">
+              <label for="radio_address4">
+                <span class="name">서울 물류센터</span>
+                <p class="address">(04524)서울특별시 중구 세종대로 110 서울특별시청</p>
+              </label>
+            </div>
+          </div>
+        </div>
+        <p class="login_btn"><button>확인</button></p>
+      </div>
+    </div>
+    <div class="modal address_item address_book">
+      <div class="modal_box">
+        <div class="tit_area">
+          <p class="modal_tit">주소 불러오기<button class="btn_close"></button></p>
+        </div>
+        <div class="modal_wrap">
+          <div class="scroll">
+            <div class="checkbox address_list">
+              <input type="radio" id="radio_address1" name="address" value="서울 물류센터">
+              <label for="radio_address1">
+                <span class="name">독도 물류센터</span>
+                <p class="address">울릉도 동남쪽 뱃길따라 200리 외로운 섬 하나 새들의 고향</p>
+              </label>
+            </div>
+            <div class="checkbox address_list">
+              <input type="radio" id="radio_address2" name="address" value="서울 물류센터">
+              <label for="radio_address2">
+                <span class="name">서울 물류센터서울 물류센터서울 물류센터서울 물류센터서울 물류센터</span>
+                <p class="address">(04524)서울특별시 중구 세종대로 110 서울특별시청</p>
+              </label>
+            </div>
+            <div class="checkbox address_list">
+              <input type="radio" id="radio_address3" name="address" value="서울 물류센터">
+              <label for="radio_address3">
+                <span class="name">서울 물류센터</span>
+                <p class="address">(04524)서울특별시 중구 세종대로 110 서울특별시청 (04524)서울특별시 중구 세종대로 110 서울특별시청(04524)서울특별시 중구 세종대로
+                  110 서울특별시청 (04524)서울특별시 중구 세종대로 110 서울특별시청(04524)서울특별시 중구 세종대로 110 서울특별시청 (04524)서울특별시 중구 세종대로 110
+                  서울특별시청</p>
+              </label>
+            </div>
+            <div class="checkbox address_list">
+              <input type="radio" id="radio_address4" name="address" value="서울 물류센터">
+              <label for="radio_address4">
+                <span class="name">서울 물류센터</span>
+                <p class="address">(04524)서울특별시 중구 세종대로 110 서울특별시청</p>
+              </label>
+            </div>
+          </div>
+        </div>
+        <p class="login_btn"><button>확인</button></p>
+      </div>
+    </div>
+    <div class="modal send">
+      <div class="modal_box">
+        <div class="tit_area">
+          <p class="modal_tit">보내는 분<button class="btn_close"></button></p>
+        </div>
+        <div class="modal_wrap">
+          <p class="input_wrap"><input type="text" id="input6" placeholder="이름"></p>
+          <p class="input_wrap"><input type="text" id="input6" placeholder="연락처 '-' 제외하고 입력"></p>
+        </div>
+        <p class="login_btn"><button>입력 완료</button></p>
+      </div>
+    </div>
+    <div class="modal get">
+      <div class="modal_box">
+        <div class="tit_area">
+          <p class="modal_tit">보내는 분<button class="btn_close"></button></p>
+        </div>
+        <div class="modal_wrap">
+          <p class="input_wrap"><input type="text" id="input6" placeholder="이름"></p>
+          <p class="input_wrap"><input type="text" id="input6" placeholder="연락처 '-' 제외하고 입력"></p>
+        </div>
+        <p class="login_btn"><button>입력 완료</button></p>
+      </div>
+    </div>
+  </body>
+
+</html>

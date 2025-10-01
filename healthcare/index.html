@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="x-apple-disable-message-reformatting">
+    <meta name="format-detection" content="telephone=no" />
+    <style>
+      /* font */
+      @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500&display=swap');
+
+      /* reset */
+      * {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        color: #666666;
+        font-family: 'Noto Sans KR', Arial, sans-serif;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 1;
+        box-sizing: border-box;
+        word-break: keep-all;
+        -webkit-text-size-adjust: none;
+      }
+
+      html,
+      body {
+        width: 100%;
+        height: 100%;
+      }
+
+      a {
+        text-decoration: none;
+      }
+
+      table {
+        width: 100%;
+      }
+
+      table,
+      tr,
+      td,
+      th,
+      thead,
+      tbody,
+      caption {
+        border-collapse: collapse;
+        border-spacing: 0;
+      }
+
+      ul,
+      li {
+        list-style: none;
+      }
+
+      /* wrap */
+      #wrap {
+        min-width: 1000px;
+        height: 100%;
+        padding: 5px;
+      }
+
+      /* title */
+      .title {
+        width: 100%;
+        padding: 20px;
+        margin-bottom: 40px;
+        background-color: #efefef;
+        border-radius: 8px;
+        box-shadow: inset 1px 1px 1px #efefef;
+      }
+
+      .title .info h1 {
+        color: #333333;
+        font-size: 32px;
+        font-weight: bold;
+      }
+
+      .title .info h2 {
+        margin-top: 20px;
+        font-size: 16px;
+      }
+
+      .title .info h3 {
+        margin-top: 10px;
+        font-size: 12px;
+      }
+
+      .title .info h3.update {
+        margin-top: 20px;
+      }
+
+      .title .history {
+        margin-top: 30px;
+      }
+
+      .title .history h2 {
+        font-size: 16px;
+        font-weight: 600;
+      }
+
+      .title .history h3 {
+        margin-top: 10px;
+        font-size: 14px;
+      }
+
+      .title .history ul {
+        display: none;
+        margin-top: 10px;
+        padding: 10px;
+        border: 1px solid #dcdcdc;
+        border-radius: 10px;
+        background-color: #fefefe;
+      }
+
+      .title .history button {
+        position: relative;
+        padding: 5px 8px;
+        cursor: pointer;
+      }
+
+      .title .history button:before {
+        position: absolute;
+        display: block;
+        width: 3px;
+        height: 3px;
+        top: calc((100% - 3px)/2);
+        left: 0;
+        border-radius: 50%;
+        background-color: #565656;
+        content: '';
+      }
+
+      .title .history ul.active {
+        display: block;
+      }
+
+      .title .history ul li {
+        margin-bottom: 5px;
+        font-size: 12px;
+        line-height: 16px;
+      }
+
+      .title .history ul li:last-child {
+        margin-bottom: 0;
+      }
+
+      .title .history ul li span {
+        margin-bottom: 5px;
+        margin-right: 5px;
+        color: #565656;
+        font-size: 12px;
+        line-height: 14px;
+        font-weight: 500;
+      }
+
+      .title .history ul li ul {
+        display: block;
+        padding: 5px;
+        margin-top: 0;
+        border: none;
+      }
+
+      .title .history ul li ul li {
+        margin-left: 10px;
+        list-style: disc;
+      }
+
+      /* table */
+      .status_info {
+        margin: 0 10px;
+        border: 1px solid #ececec;
+        line-height: 40px;
+      }
+
+      .status_info span {
+        display: inline-block;
+        width: 65px;
+        height: 23px;
+        margin-left: 10px;
+        border-radius: 10px;
+        font-size: 12px;
+        line-height: 23px;
+        text-align: center;
+      }
+
+      .status_info span.update {
+        margin-left: 5px;
+        background-color: #ffee55;
+      }
+
+      .status_info span.delete {
+        background-color: #6f6f6f;
+        color: #ffffff;
+      }
+
+      .status_info span.new {
+        background-color: #5489e5;
+        color: #ffffff;
+      }
+
+      .status_info span.issue {
+        background-color: #ff7777;
+        color: #ffffff;
+      }
+
+      .status_info span.checkup {
+        background-color: #3ac46f;
+        color: #ffffff;
+      }
+
+      .table_area {
+        margin-top: 30px;
+      }
+
+      .table_area h2 {
+        padding: 0 10px;
+        margin-bottom: 15px;
+        font-size: 18px;
+        font-weight: 600;
+      }
+
+      .table_wrap {
+        overflow: hidden;
+        margin-top: 10px;
+        border-radius: 10px;
+        border: 1px solid #d8d8d8;
+        box-shadow: 1px 1px 3px #efefef;
+      }
+
+      .table_wrap table tr:hover {
+        background-color: #ededed;
+      }
+
+      .table_wrap table tr>*:first-child {
+        width: 5%;
+      }
+
+      .table_wrap table tr>*:nth-child(2) {
+        width: 7%;
+      }
+
+      .table_wrap table tr>*:nth-child(3) {
+        width: 12%;
+      }
+
+      .table_wrap table tr>*:nth-child(4) {
+        width: 12%;
+      }
+
+      .table_wrap table tr>*:nth-child(5) {
+        width: auto;
+      }
+
+      .table_wrap table tr>*:nth-child(6) {
+        width: 17%;
+      }
+
+      .table_wrap table tr>*:last-child {
+        width: 17%;
+      }
+
+      .table_wrap table tr th {
+        position: relative;
+        background-color: #7a7a7a;
+        color: #f0f0f0;
+        font-size: 12px;
+        line-height: 30px;
+      }
+
+      .table_wrap table tr th:before {
+        position: absolute;
+        display: block;
+        width: 1px;
+        height: 10px;
+        top: 10px;
+        right: 0;
+        background-color: #bbbbbb;
+        content: '';
+      }
+
+      .table_wrap table tr th:last-child:before {
+        display: none;
+      }
+
+      .table_wrap table tr td {
+        position: relative;
+        height: 35px;
+        padding: 0 10px;
+        border-bottom: 1px solid #d8d8d8;
+        font-size: 12px;
+        line-height: 14px;
+        text-align: center;
+      }
+
+      .table_wrap table tr:last-child td {
+        border-bottom: 0;
+      }
+
+      .table_wrap table tr td:before {
+        position: absolute;
+        display: block;
+        width: 1px;
+        top: 12.5px;
+        bottom: 12.5px;
+        right: 0;
+        background-color: #d8d8d8;
+        content: '';
+      }
+
+      .table_wrap table tr td:last-child:before {
+        display: none;
+      }
+
+      .table_wrap table tr td.depth_2,
+      .table_wrap table tr td.file,
+      .table_wrap table tr td.file_title {
+        text-align: left;
+      }
+
+      .table_wrap table tr td.file_title a {
+        font-size: 12px;
+        line-height: 14px;
+        text-decoration: underline;
+      }
+
+      .table_wrap table tr td.desc,
+      .table_wrap table tr td.desc p,
+      .table_wrap table tr td.refer {
+        font-size: 12px;
+      }
+
+      .table_wrap table tr td span {
+        display: block;
+        width: 65px;
+        height: 23px;
+        margin: 0 auto;
+        border-radius: 10px;
+        font-size: 12px;
+        line-height: 23px;
+      }
+
+      .table_wrap table tr td span.update {
+        background-color: #ffee55;
+      }
+
+      .table_wrap table tr td span.delete {
+        background-color: #6f6f6f;
+        color: #ffffff;
+      }
+
+      .table_wrap table tr td span.new {
+        background-color: #5489e5;
+        color: #ffffff;
+      }
+
+      .table_wrap table tr td span.issue {
+        background-color: #ff7777;
+        color: #ffffff;
+      }
+
+      .table_wrap table tr td span.checkup {
+        background-color: #3ac46f;
+        color: #ffffff;
+      }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.6.1.js"
+      integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+    <title>Marine</title>
+    <script>
+      $(function () {
+        $('.proj_tit > button').click(function (e) {
+          e.preventDefault;
+          var tg = $(e.target);
+          var history = tg.parent('.proj_tit').siblings('.proj_log');
+          if (history.hasClass('active')) {
+            history.removeClass('active');
+          } else {
+            history.addClass('active');
+          }
+        })
+      })
+    </script>
+
+  </head>
+
+  <body>
+    <div id="wrap">
+      <div class="title">
+        <div class="info">
+          <h1>S.lab Asia Front</h1>
+          <h2>S.lab Asia</h2>
+          <h3>작성자 : Marine(여인영)</h3>
+        </div>
+      </div>
+      <p class="status_info">
+        <span class="new">ing</span> : 진행 중
+        <span class="checkup">ing</span> : 추가 개발 진행 중
+        <span class="delete">end</span> : 종료
+      </p>
+      <div class="table_area">
+        <h2>프로젝트 리스트</h2>
+        <div class="table_wrap">
+          <table class="index">
+            <colgroup>
+              <col style="width: 10%;">
+              <col style="width: 20%">
+              <col style="width: 20%">
+            </colgroup>
+            <thead>
+              <tr>
+                <th>status.</th>
+                <th>site.</th>
+                <th class="file">file.</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td></td>
+                <td>레이아웃</td>
+                <td class="file_title"><a href="html/layout.html" target="_blank">/html/layout.html</a></td>
+              </tr>
+              <tr>
+                <td></td>
+                <td>회원가입</td>
+                <td class="file_title"><a href="html/join.html" target="_blank">/html/join.html</a></td>
+              </tr>
+              <tr>
+                <td></td>
+                <td>로그인</td>
+                <td class="file_title"><a href="html/login.html" target="_blank">/html/login.html</a></td>
+              </tr>
+              <tr>
+                <td></td>
+                <td>계산서 상세 내역</td>
+                <td class="file_title"><a href="html/bill_detail.html" target="_blank">/html/bill_detail.html</a></td>
+              </tr>
+              <tr>
+                <td></td>
+                <td>계산서 정산 내역</td>
+                <td class="file_title"><a href="html/bill_list.html" target="_blank">healthcare/html/bill_list.html</a>
+                </td>
+              </tr>
+              <tr>
+                <td></td>
+                <td>내 정보</td>
+                <td class="file_title"><a href="html/my_info.html" target="_blank">healthcare/html/my_info.html</a>
+                </td>
+              </tr>
+              <tr>
+                <td></td>
+                <td>배차 및 운송 정보</td>
+                <td class="file_title"><a href="html/transfer_info.html"
+                    target="_blank">healthcare/html/transfer_info.html</a>
+                </td>
+              </tr>
+              <tr>
+                <td></td>
+                <td>운송 요청</td>
+                <td class="file_title"><a href="html/transfer_request.html"
+                    target="_blank">healthcare/html/transfer_request.html</a></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </body>
+
+</html>

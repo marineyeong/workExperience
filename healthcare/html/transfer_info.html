@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- font-style -->
+    <link href="https://cdn.jsdelivr.net/gh/sunn-us/SUIT/fonts/static/woff2/SUIT.css" rel="stylesheet">
+
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/style.css">
+
+    <script src="../js/jquery-3.6.1.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+    <script src="../js/script.js"></script>
+
+    <title>S.lab healthcare</title>
+  </head>
+
+  <body>
+    <div id="wrap">
+      <!-- header -->
+      <header>
+        <div class="menu_area">
+          <nav>
+            <div class="logo">
+              <h1 class="main_logo"><img src="." alt="s.lab healthcare">ttl Cloud</h1>
+              <h1 class="sub_logo"><img src="../images/sub_logo.png" alt="s.lab healthcare">ttl Cloud</h1>
+            </div>
+            <ul class="menu">
+              <li class="trans">
+                <a href="">뎁스 1</a>
+                <ul class="depth2">
+                  <li><a href="">뎁스 2</a></li>
+                  <li><a href="">뎁스 2</a></li>
+                </ul>
+              </li>
+              <li class="bill">
+                <a href="">뎁스 1</a>
+                <ul class="depth2">
+                  <li><a href="">뎁스 2</a></li>
+                </ul>
+              </li>
+              <li class="setting">
+                <a href="">뎁스 1</a>
+                <ul class="depth2">
+                  <li><a href="">뎁스 2</a></li>
+                  <li><a href="">뎁스 2</a></li>
+                  <li><a href="">뎁스 2</a></li>
+                </ul>
+              </li>
+            </ul>
+          </nav>
+          <p class="menu_btn"><button></button></p>
+        </div>
+        <div class="title_area">
+          <h2>배차 및 운송 정보</h2>
+        </div>
+        <div class="mypage">
+          <p class="profile">
+            <button>이익준</button>
+          </p>
+          <ul class="info_list">
+            <li><a href="">내 정보</a></li>
+            <li><a href="">비밀번호 변경</a></li>
+            <li><a href="">고객센터</a></li>
+            <li class="logout"><a href="">로그아웃</a></li>
+          </ul>
+        </div>
+      </header>
+      <!-- //header -->
+      <!-- content -->
+      <main class="content_area request transfer">
+        <!-- title -->
+        <div class="search_area">
+          <div class="input_range">
+            <span class="input_tit">조회기간</span>
+            <div class="set_select_btn">
+              <div class="select_input">
+                <div class="select_box">
+                  <button>요청일</button>
+                  <ul>
+                    <li><button>요청일1</button></li>
+                    <li><button>요청일2</button></li>
+                    <li><button>요청일3</button></li>
+                    <li><button>요청일4</button></li>
+                  </ul>
+                </div>
+                <div class="datepicker_area">
+                  <p class="input_wrap datepicker"><input type="text">
+                  </p>
+                  <span>~</span>
+                  <p class="input_wrap datepicker"><input type="text"></p>
+                </div>
+              </div>
+              <div class="set_select">
+                <div class="select_box">
+                  <button>요청번호</button>
+                  <ul>
+                    <li><button>요청번호00</button></li>
+                    <li><button>요청번호01</button></li>
+                    <li><button>요청번호02</button></li>
+                    <li><button>요청번호03</button></li>
+                  </ul>
+                </div>
+                <p class="input_wrap"><input type="text" id="input8" placeholder="이메일"></p>
+              </div>
+            </div>
+            <span class="btn_medium blue w80"><button>검색</button></span>
+          </div>
+          <div class="radio_area">
+            <span class="input_tit">조회기간</span>
+            <div class="radio_set">
+              <div class="checkbox radio">
+                <input type="radio" id="input_radio1" name="radio">
+                <label for="input_radio1"><span>전체</span></label>
+              </div>
+              <div class="checkbox radio">
+                <input type="radio" id="input_radio2" name="radio" vale="접수확정">
+                <label for="input_radio2"><span>접수확정</span></label>
+              </div>
+              <div class="checkbox radio">
+                <input type="radio" id="input_radio3" name="radio" vale="배차확정">
+                <label for="input_radio3"><span>배차확정</span></label>
+              </div>
+              <div class="checkbox radio">
+                <input type="radio" id="input_radio4" name="radio" vale="배차완료">
+                <label for="input_radio4"><span>배차완료</span></label>
+              </div>
+              <div class="checkbox radio">
+                <input type="radio" id="input_radio5" name="radio" vale="픽업 중">
+                <label for="input_radio5"><span>픽업 중</span></label>
+              </div>
+              <div class="checkbox radio">
+                <input type="radio" id="input_radio6" name="radio" vale="배송 중">
+                <label for="input_radio6"><span>배송 중</span></label>
+              </div>
+              <div class="checkbox radio">
+                <input type="radio" id="input_radio7" name="radio" vale="배송완료">
+                <label for="input_radio7"><span>배송완료</span></label>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        <section>
+          <h3 class="total">운송정보 <span>조회 결과 <i>3</i>개</span></h3>
+          <article class="request_box">
+            <div class="reorder_area">
+              <ul class="trans_info">
+                <p class="order_date"><b>2022-01-23</b>888888888 <span class="info_tag blue">담당자 확인 중</span></p>
+                <li>
+                  <span class="item_tit">운송차량</span>
+                  <p>-</p>
+                </li>
+                <li>
+                  <span class="item_tit">운송기사</span>
+                  <p>-</p>
+                </li>
+                <li>
+                  <span class="item_tit">전자인수증</span>
+                  -
+                </li>
+              </ul>
+              <div class="progress_route">
+                <div class="progressbar">
+                  <!-- 출하 시작 시 : start class 추가 -->
+                  <ul class="start now">
+                    <li></li>
+                    <!-- 진행된 프로세스 : on class 추가 -->
+                    <!-- 현재 프로세스 : now class 추가 -->
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                  </ul>
+                </div>
+                <div class="route">
+                  <p class="depart"><span>수원창고</span>(12345)서울 강남대로 152길 20</p>
+                  <p><span>서울대학교 병원</span>(12345)서울 강남대로 152길 20(12345)서울 강남대로 152길 20(12345)서울 강남대로 152길 20</p>
+                </div>
+              </div>
+            </div>
+          </article>
+          <article class="request_box">
+            <div class="reorder_area">
+              <ul class="trans_info">
+                <p class="order_date"><b>2022-01-23</b>888888888 <span class="info_tag blue">접수 확정</span></p>
+                <li>
+                  <span class="item_tit">운송차량</span>
+                  <p>-</p>
+                </li>
+                <li>
+                  <span class="item_tit">운송기사</span>
+                  <p>-</p>
+                </li>
+                <li>
+                  <span class="item_tit">전자인수증</span>
+                  -
+                </li>
+              </ul>
+              <div class="progress_route">
+                <div class="progressbar">
+                  <!-- 출하 시작 시 : start class 추가 -->
+                  <ul class="start">
+                    <li class="on now"></li>
+                    <li></li>
+                    <!-- 진행된 프로세스 : on class 추가 -->
+                    <!-- 현재 프로세스 : now class 추가 -->
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                  </ul>
+                </div>
+                <div class="route">
+                  <p class="depart"><span>수원창고</span>(12345)서울 강남대로 152길 20</p>
+                  <p><span>서울대학교 병원</span>(12345)서울 강남대로 152길 20(12345)서울 강남대로 152길 20(12345)서울 강남대로 152길 20</p>
+                </div>
+              </div>
+            </div>
+          </article>
+          <article class="request_box">
+            <div class="reorder_area">
+              <ul class="trans_info">
+                <p class="order_date"><b>2022-01-23</b>888888888 <span class="info_tag blue">배차 완료</span></p>
+                <li>
+                  <span class="item_tit">운송차량</span>
+                  <p>1톤 트럭</p>
+                </li>
+                <li>
+                  <span class="item_tit">운송기사</span>
+                  박강민
+                  <p>010-****-1234</p>
+                </li>
+                <li>
+                  <span class="item_tit">전자인수증</span>
+                  1개
+                </li>
+              </ul>
+              <div class="progress_route">
+                <div class="progressbar">
+                  <!-- 출하 시작 시 : start class 추가 -->
+                  <ul class="start">
+                    <li class="on"></li>
+                    <li class="on now"></li>
+                    <!-- 진행된 프로세스 : on class 추가 -->
+                    <!-- 현재 프로세스 : now class 추가 -->
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                  </ul>
+                </div>
+                <div class="route">
+                  <p class="depart"><span>수원창고</span>(12345)서울 강남대로 152길 20</p>
+                  <p><span>서울대학교 병원</span>(12345)서울 강남대로 152길 20(12345)서울 강남대로 152길 20(12345)서울 강남대로 152길 20</p>
+                </div>
+              </div>
+            </div>
+          </article>
+          <article class="request_box">
+            <div class="reorder_area">
+              <ul class="trans_info">
+                <p class="order_date"><b>2022-01-23</b>888888888 <span class="info_tag blue">픽업 중</span></p>
+                <li>
+                  <span class="item_tit">운송차량</span>
+                  <p>1톤 트럭</p>
+                </li>
+                <li>
+                  <span class="item_tit">운송기사</span>
+                  박강민
+                  <p>010-****-1234</p>
+                </li>
+                <li>
+                  <span class="item_tit">전자인수증</span>
+                  1개
+                </li>
+              </ul>
+              <div class="progress_route">
+                <div class="progressbar">
+                  <!-- 출하 시작 시 : start class 추가 -->
+                  <ul class="start">
+                    <li class="on"></li>
+                    <li class="on"></li>
+                    <!-- 진행된 프로세스 : on class 추가 -->
+                    <!-- 현재 프로세스 : now class 추가 -->
+                    <li class="on now"></li>
+                    <li></li>
+                    <li></li>
+                  </ul>
+                </div>
+                <div class="route">
+                  <p class="depart"><span>수원창고</span>(12345)서울 강남대로 152길 20</p>
+                  <p><span>서울대학교 병원</span>(12345)서울 강남대로 152길 20(12345)서울 강남대로 152길 20(12345)서울 강남대로 152길 20</p>
+                </div>
+              </div>
+            </div>
+          </article>
+          <article class="request_box">
+            <div class="reorder_area">
+              <ul class="trans_info">
+                <p class="order_date"><b>2022-01-23</b>888888888 <span class="info_tag blue">운송 중</span></p>
+                <li>
+                  <span class="item_tit">운송차량</span>
+                  <p>1톤 트럭</p>
+                </li>
+                <li>
+                  <span class="item_tit">운송기사</span>
+                  박강민
+                  <p>010-****-1234</p>
+                </li>
+                <li>
+                  <span class="item_tit">전자인수증</span>
+                  1개
+                </li>
+              </ul>
+              <div class="progress_route">
+                <div class="progressbar">
+                  <!-- 출하 시작 시 : start class 추가 -->
+                  <ul class="start">
+                    <li class="on"></li>
+                    <li class="on"></li>
+                    <li class="on"></li>
+                    <li class="on now"></li>
+                    <!-- 진행된 프로세스 : on class 추가 -->
+                    <!-- 현재 프로세스 : now class 추가 -->
+                    <li></li>
+                  </ul>
+                </div>
+                <div class="route">
+                  <p class="depart"><span>수원창고</span>(12345)서울 강남대로 152길 20</p>
+                  <p><span>서울대학교 병원</span>(12345)서울 강남대로 152길 20(12345)서울 강남대로 152길 20(12345)서울 강남대로 152길 20</p>
+                </div>
+              </div>
+            </div>
+          </article>
+          <article class="request_box">
+            <div class="reorder_area">
+              <ul class="trans_info">
+                <p class="order_date"><b>2022-01-23</b>888888888 <span class="info_tag blue">운송 완료</span><span
+                    class="info_tag green">정상</span></p>
+                <li>
+                  <span class="item_tit">운송차량</span>
+                  <p>1톤 트럭</p>
+                </li>
+                <li>
+                  <span class="item_tit">운송기사</span>
+                  박강민
+                  <p>010-****-1234</p>
+                </li>
+                <li>
+                  <span class="item_tit">전자인수증</span>
+                  -
+                </li>
+              </ul>
+              <div class="progress_route">
+                <div class="route">
+                  <p class="depart back"><span>수원창고</span>(12345)서울 강남대로 152길 20</p>
+                  <p><span>서울대학교 병원</span>(12345)서울 강남대로 152길 20(12345)서울 강남대로 152길 20(12345)서울 강남대로 152길 20</p>
+                </div>
+              </div>
+            </div>
+          </article>
+          <article class="request_box">
+            <div class="reorder_area">
+              <ul class="trans_info">
+                <p class="order_date"><b>2022-01-23</b>888888888 <span class="info_tag blue">반송 중</span><span
+                    class="info_tag red">이탈</span></p>
+                <li>
+                  <span class="item_tit">운송차량</span>
+                  <p>1톤 트럭</p>
+                </li>
+                <li>
+                  <span class="item_tit">운송기사</span>
+                  박강민
+                  <p>010-****-1234</p>
+                </li>
+                <li>
+                  <span class="item_tit">전자인수증</span>
+                  -
+                </li>
+              </ul>
+              <div class="progress_route">
+                <div class="route">
+                  <p class="depart back"><span>수원창고</span>(12345)서울 강남대로 152길 20</p>
+                  <p><span>서울대학교 병원</span>(12345)서울 강남대로 152길 20(12345)서울 강남대로 152길 20(12345)서울 강남대로 152길 20</p>
+                </div>
+              </div>
+            </div>
+          </article>
+          <article class="request_box">
+            <div class="reorder_area">
+              <ul class="trans_info">
+                <p class="order_date"><b>2022-01-23</b>888888888 <span class="info_tag blue">반송 완료</span><span
+                    class="info_tag red">이탈</span></p>
+                <li>
+                  <span class="item_tit">운송차량</span>
+                  <p>1톤 트럭</p>
+                </li>
+                <li>
+                  <span class="item_tit">운송기사</span>
+                  박강민
+                  <p>010-****-1234</p>
+                </li>
+                <li>
+                  <span class="item_tit">전자인수증</span>
+                  -
+                </li>
+              </ul>
+              <div class="progress_route">
+                <div class="route">
+                  <p class="depart back"><span>수원창고</span>(12345)서울 강남대로 152길 20</p>
+                  <p><span>서울대학교 병원</span>(12345)서울 강남대로 152길 20(12345)서울 강남대로 152길 20(12345)서울 강남대로 152길 20</p>
+                </div>
+              </div>
+            </div>
+          </article>
+          <article class="request_box">
+            <div class="reorder_area">
+              <ul class="trans_info">
+                <p class="order_date"><b>2022-01-23</b>888888888 <span class="info_tag gray">취소</span></p>
+                <li>
+                  <span class="item_tit">운송차량</span>
+                  <p>-</p>
+                </li>
+                <li>
+                  <span class="item_tit">운송기사</span>
+                  <p>-</p>
+                </li>
+                <li>
+                  <span class="item_tit">전자인수증</span>
+                  -
+                </li>
+              </ul>
+              <div class="progress_route">
+                <div class="route">
+                  <p class="depart cancel"><span>수원창고</span>(12345)서울 강남대로 152길 20</p>
+                  <p><span>서울대학교 병원</span>(12345)서울 강남대로 152길 20(12345)서울 강남대로 152길 20(12345)서울 강남대로 152길 20</p>
+                </div>
+              </div>
+            </div>
+          </article>
+
+
+          <p class="btn_area">
+            <span class="btn_medium btn_ico add white w280"><button>더보기</button></span>
+          </p>
+        </section>
+        <!-- title -->
+      </main>
+      <!-- //content -->
+      <!-- footer -->
+      <footer>
+        <p class="copyright">Copyright © (주)에스랩아시아 All rights reserved.</p>
+        <ul class="">
+          <li><a href="">이용약관</a></li>
+          <li><a href="">개인정보 처리방침</a></li>
+        </ul>
+      </footer>
+      <!-- //footer -->
+    </div>
+  </body>
+
+</html>

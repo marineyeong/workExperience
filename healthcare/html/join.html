@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- font-style -->
+  <link href="https://cdn.jsdelivr.net/gh/sunn-us/SUIT/fonts/static/woff2/SUIT.css" rel="stylesheet">
+
+  <!-- stylesheet -->
+  <link rel="stylesheet" href="../css/reset.css">
+  <link rel="stylesheet" href="../css/style.css">
+
+  <script src="../js/jquery-3.6.1.min.js"></script>
+  <script src="../js/script.js"></script>
+
+  <title>S.lab healthcare</title>
+</head>
+<body>
+  <div id="wrap">
+    <main class="join">
+      <section class="step1">
+        <h1 class="step_tit"><span>Step 01</span>정보입력</h1>
+        <article>
+          <h2>회사정보</h2>
+          <label for="input1">
+            <span class="input_tit must">사업자 등록 번호</span>
+            <p class="input_wrap"><input type="text" id="input1" placeholder="사업자 등록 번호 입력"></p>
+          </label>
+          <label for="input2">
+            <span class="input_tit must">사업자명</span>
+            <p class="input_wrap"><input type="text" id="input2" placeholder="사업자명 입력"></p>
+          </label>
+          <label for="input3">
+            <span class="input_tit must">부서명</span>
+            <div class="set_btn">
+              <!-- 하단 경고 멘트 class warning 추가-->
+              <div class="input_txt warning">
+                <p class="input_wrap"><input type="text" id="input3" placeholder="부서명 입력">
+                </p>
+                <span class="sub_txt">가입 확인을 해주세요.</span>
+              </div>
+              <span class="btn_medium"><button>가입 확인</button></span>
+            </div>
+          </label>
+          <label for="input4">
+            <span class="input_tit must">세금계산서 이메일</span>
+            <div class="set_select">
+              <p class="input_wrap"><input type="text" id="input4" placeholder="이메일"></p>
+            </div>
+          </label>
+          <label for="input5">
+            <span class="input_tit must">사업자 등록증</span>
+            <div class="set_btn">
+              <div class="input_txt">
+                <p class="input_wrap txt_only empty">
+                  선택된 파일 없음
+                </p>
+                <p class="input_wrap txt_only">
+                  에스랩아시아_사업자등록증.jpg
+                </p>
+                <span class="sub_txt">* jpg, pdf 파일 첨부 가능</span>
+              </div>
+              <span class="btn_medium"><button>파일 선택</button></span>
+            </div>
+          </label>
+        </article>
+        <article>
+          <h2>운송지 정보 <span>보내는 운송에서 상차지 주소로 기본 등록됩니다.</span></h2>
+          <label for="input6">
+            <span class="input_tit must">기본 주소</span>
+            <div class="set_wrap">
+              <div class="set_btn">
+                <p class="input_wrap"><input type="text" id="input6" placeholder="우편번호"></p>
+                <span class="btn_medium"><button>주소 검색</button></span>
+              </div>
+              <p class="input_wrap"><input type="text" placeholder="주소"></p>
+              <p class="input_wrap"><input type="text" placeholder="상세주소 입력"></p>
+            </div>
+        </article>
+        <article>
+          <h2>회원 정보</h2>
+          <label for="input7">
+            <span class="input_tit must">대표 담당자 이름</span>
+            <p class="input_wrap"><input type="text" id="input7" placeholder="이름 입력"></p>
+          </label>
+          <label for="input8">
+            <span class="input_tit must">이메일</span>
+            <div class="input_txt warning">
+              <p class="input_wrap"><input type="text" id="input8" placeholder="이메일"></p>
+              <span class="sub_txt">이메일을 확인해주세요.</span>
+            </div>
+          </label>
+          <label class="tel_num" for="input9">
+            <span class="input_tit must">연락처</span>
+            <div class="set_wrap">
+              <div class="set_select_btn">
+                <div class="select_input">
+                  <div class="select_box">
+                    <button>010</button>
+                    <ul>
+                      <li><button>010</button></li>
+                      <li><button>011</button></li>
+                      <li><button>018</button></li>
+                      <li><button>019</button></li>
+                    </ul>
+                  </div>
+                  <p class="input_wrap"><input type="text"></p>
+                  <p class="input_wrap"><input type="text"></p>
+                </div>
+                <span class="btn_medium"><button>인증 번호</button></span>
+              </div>
+              <div class="set_btn">
+                <div class="input_txt">
+                  <p class="input_wrap"><input type="txt" id="input9" placeholder="인증번호 입력"></p>
+                  <span class="sub_txt">핸드폰 번호 인증을 완료했습니다.</span>
+                </div>
+                <span class="btn_medium"><button>번호 확인</button></span>
+              </div>
+              <div class="set_btn">
+                <div class="input_txt warning">
+                  <p class="input_wrap"><input type="txt" id="input9" placeholder="인증번호 입력"></p>
+                  <span class="sub_txt">인증번호를 확인 해주세요.</span>
+                </div>
+                <span class="btn_medium"><button>번호 확인</button></span>
+              </div>
+            </div>
+          </label>
+          <label for="input10">
+            <span class="input_tit must">비밀번호</span>
+            <p class="input_wrap"><input type="password" id="input10" placeholder="영문, 숫자 포함 8~12자리 입력"></p>
+          </label>
+          <label for="input11">
+            <span class="input_tit must">비밀번호 확인</span>
+            <p class="input_wrap"><input type="password" id="input11" placeholder="영문, 숫자 포함 8~12자리 입력"></p>
+          </label>
+        </article>
+      </section>
+      <section class="step2">
+        <h1 class="step_tit"><span>Step 02</span>약관 동의</h1>
+        <article>
+          <div class="checkbox all">
+            <input type="checkbox" id="check_all" name="chk">
+            <label for="check_all"><span>약관 전체 동의</span></label>
+          </div>
+          <div class="agree_cont">
+            <div class="agree_txt">
+              <div class="agree_body">
+                약관 내용이 들어갑니다. 약관 내용이 들어갑니다. 약관 내용이 들어갑니다. 약관 내용이 들어갑니다. 약관 내용이 들어갑니다. 약관 내용이 들어갑니다. 약관 내용이 들어갑니다. 약관 내용이 들어갑니다. 약관 내용이 들어갑니다. 약관 내용이 들어갑니다. 약관 내용이 들어갑니다. 약관 내용이 들어갑니다. 약관 내용이 들어갑니다. 약관 내용이 들어갑니다. 약관 내용이 들어갑니다. 약관 내용이 들어갑니다. 약관 내용이 들어갑니다. 약관 내용이 들어갑니다. 약관 내용이 들어갑니다
+              </div>
+            </div>
+            <div class="checkbox">
+              <input type="checkbox" id="input_check1" name=chk>
+              <label for="input_check1"><span>기업회원 이용 약관 동의 (필수)</span></label>
+            </div>
+          </div>
+          <div class="agree_cont">
+            <div class="agree_txt">
+              <div class="agree_body">
+                약관 내용이 들어갑니다. 약관 내용이 들어갑니다. 약관 내용이 들어갑니다. 약관 내용이 들어갑니다. 약관 내용이 들어갑니다. 약관 내용이 들어갑니다. 약관 내용이 들어갑니다. 약관 내용이 들어갑니다. 약관 내용이 들어갑니다. 약관 내용이 들어갑니다. 약관 내용이 들어갑니다. 약관 내용이 들어갑니다. 약관 내용이 들어갑니다. 약관 내용이 들어갑니다. 약관 내용이 들어갑니다. 약관 내용이 들어갑니다. 약관 내용이 들어갑니다. 약관 내용이 들어갑니다. 약관 내용이 들어갑니다
+              </div>
+            </div>
+            <div class="checkbox">
+              <input type="checkbox" id="input_check2" name="chk">
+              <label for="input_check2"><span>개인정보 수집 및 이용 동의 (필수)</span></label>
+            </div>
+          </div>
+          <div class="agree_cont">
+            <div class="agree_txt">
+              <div class="agree_body">
+                약관 내용이 들어갑니다. 약관 내용이 들어갑니다. 약관 내용이 들어갑니다. 약관 내용이 들어갑니다. 약관 내용이 들어갑니다. 약관 내용이 들어갑니다. 약관 내용이 들어갑니다. 약관 내용이 들어갑니다. 약관 내용이 들어갑니다. 약관 내용이 들어갑니다. 약관 내용이 들어갑니다. 약관 내용이 들어갑니다. 약관 내용이 들어갑니다. 약관 내용이 들어갑니다. 약관 내용이 들어갑니다. 약관 내용이 들어갑니다. 약관 내용이 들어갑니다. 약관 내용이 들어갑니다. 약관 내용이 들어갑니다
+              </div>
+            </div>
+            <div class="checkbox">
+              <input type="checkbox" id="input_check3" name="chk">
+              <label for="input_check3"><span>화물자동차운송주선약관(필수)</span></label>
+            </div>
+          </div>
+        </article>
+      </section>
+      <p class="login_btn"><button class="btn_modal join_complete">회원 가입</button></p>
+    </main>
+  </div>
+  <div class="modal join_complete">
+    <div class="modal_box">
+      <div class="tit_area">
+        <p class="modal_tit">회원가입 요청 완료</p>
+        <p class="sub_txt">
+          회원 가입 요청이 완료되었습니다. <br>
+          승인이 완료되면 결과를 이메일로 전달해 드릴게요.
+        </p>
+      </div>
+      <ul class="join_info">
+        <li><span>사업자 번호</span>769-88-01407</li>
+        <li><span>사업자명</span>신박제약</li>
+        <li><span>부서명</span>물류 1팀</li>
+        <li><span>담당자 이메일</span>abcd@email.com</li>
+      </ul>
+      <p class="login_btn"><button>로그인하기</button></p>
+    </div>
+  </div>
+</body>
+</html>
